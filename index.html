@@ -91,8 +91,18 @@
 }
 .forheading{
   font-family: 'Montserrat', sans-serif;
+  color: #bc1821;
+  text-transform: uppercase;
+   font-weight: bolder;
+   font-size: 28px;
 }
-
+.forbrandname{
+  position: absolute;
+   bottom: -20%; 
+   left: 25%;
+   text-align: center;
+   text-transform: uppercase;
+}
 
 
 .swiper-container {
@@ -104,17 +114,23 @@
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 300px;
-      height: 560px;
-      
-    }
-    .forcardimg{
-  margin-top: -30px;
+      width: 200px;
+       height: 200px;
+      }
+      .forheading2{
+        text-transform: uppercase;
+         color: #00bae9; 
+        font-weight: 700;
+      }
+      .forproductslide{
+        height: 330px;
+        width: 220px;
+      }
+      .forcard{
+         width: 14rem; 
+         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
 
-}
-.forcardimg:hover{
-  transform: scaleY(1.1);
-}
 /*.forcard{
   background:#404040;
    color: #fefefe;
@@ -128,7 +144,8 @@
 }
 .card-title{
         font-family: 'Montserrat', sans-serif;
-
+         font-size: 18px;
+         font-weight: bold;
 }
 .forbutton{
   border: 9px solid #fff;
@@ -139,15 +156,19 @@
   background: #bc1821;
   border-radius: 0 11px 11px 0;
   color: #fff;
-  font-size:8px;
+  font-size: 12px;
+  padding: 2px;
   padding-right: 5px;
 }
 .forbtn{
   background: #00ade9;
+  position: absolute; 
+   right: 5px; 
+  top: 86%;
+  border: none;
+  outline: none;
 }
-.forbrandslide{
-  height: 300px;
-}
+
 
     @media(max-width: 680px){
       .forlogo{
@@ -160,13 +181,40 @@
           height: 40px;
           padding: 5px;
           }
+        .forbrandslide{
+           width: 55px;
+           height: 55px;
+          }
+          .forheading{
+            font-size: 16px;
+          }
+          .forbrandname{
+            bottom:-44%;
+            font-size: 8px;
+            left: 15%;
+          }
+          .forproductslide{
+            width: 150px;
+            height: 280px;
+          }
+          .forcard{
+            width: 10rem;
+          }
+          .card-title{
+             font-size: 13px;
+             line-height: 0.5;
+             font-weight: bold;
+          }
+          .forcardtitle2{
+            font-size: 10px; 
+            line-height: 1;
+          }
+          .forbtn{
+            top: 81%;
+          }
+)
+/*new*/
 
-
-    .forbrandslide{
-      width: 55px;
-      height: 55px;
-
-    }
   </style>
 </head>
 
@@ -199,8 +247,12 @@
 <div class="container pb-2">
 
  <div class="d-flex justify-content-center px-5">
-<!--      <i class="fa fa-user forlogin" aria-hidden="true"> Sign up</i>
- -->          <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+<!--      <i class="fa fa-user forlogin" aria-hidden="true"> Sign up</i> -->
+          <div class="search"> 
+            <input type="text" class="search-input" placeholder="Search..." name=""> 
+                <a href="#" class="search-icon"> <i class="fa fa-search"></i>
+                 </a> 
+               </div>
 
      
 
@@ -212,14 +264,18 @@
   </div>
   <div class="pt-0" style="border-bottom: 4px solid #ddd"></div>
 
-  <h5 class=" forheading pt-2 pl-2" style="color: #bc1821; text-transform: uppercase; font-weight: bolder;">Shop by Brands</h5>
-<div class="swiper-container pl-2">
+
+  <h5 class=" forheading pt-2 pl-lg-5 pl-2">Shop by Brands</h5>
+
+<div class="swiper-container pl-lg-5 pl-2">
     <div class="swiper-wrapper">
-      <div class="swiper-slide forbrandslide" style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h2 style="position: absolute; bottom: -20%; left: 20%;"></h2></div>
+      <div class="swiper-slide forbrandslide" style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h5 class="forbrandname">
+        AL-NAFEES
+      </h5></div>
       <div class="swiper-slide forbrandslide" style="background-image:url(img/logo2.jpg);     border-radius: 50%;">
-        <div>
-          <h2  style="position: absolute; bottom: -20%; left: 20%; text-transform: uppercase;">  </h2>
-        </div>
+       
+          <h5  class="forbrandname">Imadiator</h5>
+        
       </div>
       <div class="swiper-slide forbrandslide" style="background-image:url(img/hero2.jpg);     border-radius: 50%;"></div>
       <div class="swiper-slide forbrandslide" style="background-image:url(img/hero2.jpg);     border-radius: 50%;"></div>
@@ -227,33 +283,440 @@
 
 
     </div>
-     <div class="swiper-pagination"></div>
+     <div class="swiper-pagination mt-lg-4" style="top: 85%; height: 2px;"></div>
   </div>
 
-<div class="mb-4" style="border-bottom: 4px solid #ddd"></div>
 
-<div class="container">
-  <h5 class="forheading" style="text-transform: uppercase; color: #00bae9; font-weight: 700;">Attar</h5>
-  <div class="row">
-    <div  class="col-lg-3 col-md-6 col-sm-6">
-      <div class="card" style="width: 10rem;     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-">
-  <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
-  <div class="fordiscount">5% off</div>
-  <div class="card-body">
-    <h5 class="card-title" style="font-size: 13px; line-height: 0.5; font-weight: bold;">Silk Musk Attar(12ml)</h5>
-    <h6 class="card-title"style="font-size: 10px; line-height: 1;">Brand : Al-Nafees
-<br>Light Fragnance</h6>
+<h4 class="text-center">Products of AL-NAFEES</h4>
+<div class="container-fluid">
+  <h5 class="forheading2 pl-4">Attar</h5>
 
-<h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
-<small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
-<button class="btn btn-primary" style="position: absolute;  right: 5px; top: 80%;">Add</button>
+  <div class="swiper-container">
+   
+       <div class="swiper-wrapper">
+            
 
-<!--     <a href="#" class="btn btn-primary">Go</a> -->
-  </div>
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+
+<!-- 2nd -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+<!-- 3rd -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 4th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 5th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+<!-- 6th -->
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 7th --> 
+             <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>                     
 </div>
-    </div>
-  </div>
+      <div class="swiper-pagination mt-lg-4" style="top: 94%; height: 2px;"></div>
+     </div>
+   </div>
+</div>
+
+<div class="container-fluid">
+  <h5 class="forheading2 pl-4">Lotion</h5>
+
+  <div class="swiper-container">
+   
+       <div class="swiper-wrapper">
+            
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+
+<!-- 2nd -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+<!-- 3rd -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 4th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 5th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+
+<!-- 6th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+  <!-- 7th -->
+              <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>                     
+</div>
+      <div class="swiper-pagination mt-lg-4" style="top: 94%; height: 2px;"></div>
+     </div>
+   </div>
+</div>
+
+<div class="container-fluid">
+  <h5 class="forheading2 pl-4">Perfume Spray</h5>
+
+  <div class="swiper-container">
+   
+       <div class="swiper-wrapper">
+            
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+
+<!-- 2nd -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+<!-- 3rd -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 4th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+ <!-- 5th -->
+
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+<!-- 6th -->
+            <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+  <!-- 7th-->
+              <div class="swiper-slide forproductslide">
+               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+
+</div>
+      <div class="swiper-pagination mt-lg-4" style="top: 94%; height: 2px;"></div>
+     </div>
+   </div>
 </div>
 
 <div style="margin-bottom: 1000px;"></div>
@@ -289,12 +752,14 @@ function fornumber(id) {
      pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',
+
       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     });
+
 
 
   </script>
