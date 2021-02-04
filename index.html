@@ -23,6 +23,8 @@
     *{
       margin: 0;
       padding: 0;
+            font-family: 'Montserrat', sans-serif;
+
     }
     .forlogo{
       position: absolute;
@@ -90,23 +92,12 @@
 .forheading{
   font-family: 'Montserrat', sans-serif;
 }
-    @media(max-width: 680px){
-      .forlogo{
-        left: 22%;
-      }
-      .forlogoicon{
-        display: none;
-      }
-      .search{
-          height: 40px;
-          padding: 5px;
-          }
-    }
+
 
 
 .swiper-container {
       width: 100%;
-      padding-top: 50px;
+      padding-top: 10px;
       padding-bottom: 50px;
     }
 
@@ -124,13 +115,16 @@
 .forcardimg:hover{
   transform: scaleY(1.1);
 }
-.forcard{
+/*.forcard{
   background:#404040;
-  color: #fefefe;
-        font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   color: #fefefe;
+   font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 18rem;
 
-
+}*/
+.card-body{
+  padding: 6px;
 }
 .card-title{
         font-family: 'Montserrat', sans-serif;
@@ -141,17 +135,38 @@
 }
  .fordiscount{
   position: absolute;
-  top: 0%;
-
+  top: 10px;
   background: #bc1821;
   border-radius: 0 11px 11px 0;
   color: #fff;
+  font-size:8px;
+  padding-right: 5px;
 }
 .forbtn{
   background: #00ade9;
 }
+.forbrandslide{
+  height: 300px;
+}
+
+    @media(max-width: 680px){
+      .forlogo{
+        left: 22%;
+      }
+      .forlogoicon{
+        display: none;
+      }
+      .search{
+          height: 40px;
+          padding: 5px;
+          }
 
 
+    .forbrandslide{
+      width: 55px;
+      height: 55px;
+
+    }
   </style>
 </head>
 
@@ -195,423 +210,51 @@
   <div>
     <img src="img/hero2_2.jpeg" class="" width="100%">
   </div>
-  <h2 class="text-center forheading pt-4">Brands</h2>
-<div class="swiper-container pl-5">
+  <div class="pt-0" style="border-bottom: 4px solid #ddd"></div>
+
+  <h5 class=" forheading pt-2 pl-2" style="color: #bc1821; text-transform: uppercase; font-weight: bolder;">Shop by Brands</h5>
+<div class="swiper-container pl-2">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(img/logo1.jpg);     border-radius: 50%; height: 300px;" ><h2 style="position: absolute; bottom: -20%; left: 20%;">AL-NAFEES</h2></div>
-      <div class="swiper-slide" style="background-image:url(img/logo2.jpg);     border-radius: 50%; height: 300px;">
+      <div class="swiper-slide forbrandslide" style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h2 style="position: absolute; bottom: -20%; left: 20%;"></h2></div>
+      <div class="swiper-slide forbrandslide" style="background-image:url(img/logo2.jpg);     border-radius: 50%;">
         <div>
-          <h2  style="position: absolute; bottom: -20%; left: 20%; text-transform: uppercase;">Imadiattar  </h2>
+          <h2  style="position: absolute; bottom: -20%; left: 20%; text-transform: uppercase;">  </h2>
         </div>
       </div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg);     border-radius: 50%; height: 300px;"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg);     border-radius: 50%; height: 300px;"></div>
+      <div class="swiper-slide forbrandslide" style="background-image:url(img/hero2.jpg);     border-radius: 50%;"></div>
+      <div class="swiper-slide forbrandslide" style="background-image:url(img/hero2.jpg);     border-radius: 50%;"></div>
+      <div class="swiper-slide forbrandslide" style="background-image:url(img/hero2.jpg);     border-radius: 50%;"></div>
 
 
     </div>
+     <div class="swiper-pagination"></div>
   </div>
 
+<div class="mb-4" style="border-bottom: 4px solid #ddd"></div>
 
-<div class="swiper-container pl-5" style="background: #efefef;">
-    <h2 class="pl-5 forheading pb-5">Attar</h2>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-                <div class="card px-4 forcard shadow" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
+<div class="container">
+  <h5 class="forheading" style="text-transform: uppercase; color: #00bae9; font-weight: 700;">Attar</h5>
+  <div class="row">
+    <div  class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card" style="width: 10rem;     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+">
+  <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+  <div class="fordiscount">5% off</div>
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 13px; line-height: 0.5; font-weight: bold;">Silk Musk Attar(12ml)</h5>
+    <h6 class="card-title"style="font-size: 10px; line-height: 1;">Brand : Al-Nafees
+<br>Light Fragnance</h6>
 
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
+<h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+<small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+<button class="btn btn-primary" style="position: absolute;  right: 5px; top: 80%;">Add</button>
 
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide" >
-           <div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide"><div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-          </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-          </div>
-      <div class="swiper-slide">
-                <div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-                <div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-                <div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-                <div class="card px-4 forcard" style="width: 18rem;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title text-white">Silk musk (12ml)</h4>
-                <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text text-white"><small>Light fragnance</small></p>
-                  <div class="card-text text-white" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-
+<!--     <a href="#" class="btn btn-primary">Go</a> -->
+  </div>
+</div>
     </div>
   </div>
-
-
-<div class="swiper-container pl-5" style="background: #bc1821;">
-      <h2 class="pl-5  forheading text-white pb-5">Perfume Spray</h2>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-                        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card px-4 forcard shadow" style="width: 18rem; background: #d0d0d0; color: #000;">
-           <img class="card-img-top forcardimg" src="img/p2.jpg" alt="Card image cap">
-              <div class="fordiscount px-3">5% off</div>
-              <div class="card-body">
-                <h4 class="card-title">Silk musk (12ml)</h4>
-                  <h6 class="card-title">Brand : AL-NAFEES</h6>
-                  <p class="card-text "><small>Light fragnance</small></p>
-                      
-
-                  <div class="card-text" style="font-size: 24px;">&#8377; 550
-                      <small style="text-decoration: line-through;">&#8377; 650</small>
-                  </div>
-
-                      <div class="d-flex justify-content-center">
-                    <!-- <a href="#" class="mt-2"> -->
-                    <button class="btn forbtn mt-2" onclick="fornumber(this);">ADD +</button>
-                      <!-- <label><input type="radio" name="btn"></label> -->
-                   <!--  </a> -->
-                  </div>
-                </div>
-            </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="swiper-container pl-5" style="background: #efefef;">
-    <h2 class="pl-5 forheading pb-3">Lotion</h2>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-
-    </div>
-  </div>
-
-
-<div class="swiper-container pl-5" style="background: #bc1821;">
-      <h2 class="pl-5 forheading text-white pb-3">Roll On</h2>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/hero2.jpg)"></div>
-
-    </div>
-  </div>
-
-
+</div>
 
 <div style="margin-bottom: 1000px;"></div>
   <script>
@@ -635,7 +278,7 @@ function fornumber(id) {
       grabCursor: true,
       centeredSlides: false,
       slidesPerView: 'auto',
-      spaceBetween: 40,
+      spaceBetween: 30,
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -643,8 +286,13 @@ function fornumber(id) {
         modifier: 1,
         slideShadows: false,
       },
-      pagination: {
+     pagination: {
         el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
 
