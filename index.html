@@ -138,11 +138,12 @@
       }
       .forproductslide{
         height: 330px;
-        width: 220px;
+      /*  width: 220px;*/
+      width: 210px;
       }
       .forproductslide2{
         height: 330px;
-        width: 250px;
+        width: 280px;
       }
 
       .forcard{
@@ -190,6 +191,40 @@
 .swiper-slide {
          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
+
+.home-newsletter {
+padding: 30px 0;
+background: #fff;
+}
+
+.home-newsletter .single {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2;
+ }
+.home-newsletter .single h2 {
+font-size: 22px;
+color: #000;
+text-transform: uppercase;
+margin-bottom: 40px; }
+.home-newsletter .single .form-control {
+height: 50px;
+background: rgba(0, 0, 0, 0.3);
+border-color: transparent;
+border-radius: 20px 0 0 20px;
+border: 1px solid #ddd; 
+}
+.home-newsletter .single .form-control:focus {
+box-shadow: none;
+border-color: #243c4f; }
+.home-newsletter .single .btn {
+min-height: 50px; 
+border-radius: 0 20px 20px 0;
+background: #00bae9;
+color: #fff;
+}
  @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
 
@@ -224,6 +259,9 @@
 
  .rights {
      font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+ .col-lg-3{
+  padding-left: 0px;
  }
 @media(max-width: 1200px){
   .offerbtn{
@@ -268,11 +306,15 @@
           }
           .forproductslide{
             width: 150px;
-            height: 280px;
+            height: 270px;
           }
-          .forproductslide2{
+/*          .forproductslide2{
               width: 170px;
               height: 280px;
+          }*/
+           .forproductslide2{
+              width: 170px;
+              height: 270px;
           }
           .forcard{
             width: 10rem;
@@ -322,18 +364,18 @@
 </div>
 </nav>
 
-<div  style="background: #efefef;">
+<div  style="background: #efefef; border-bottom: 1px solid #808080;">
 <div class="container pb-2">
 
  <div class="d-flex justify-content-center px-5">
 <!--      <i class="fa fa-user forlogin" aria-hidden="true"> Sign up</i> -->
+  <i class="fa fa-map-marker my-auto mr-4" aria-hidden="true">&nbsp;INDIA</i>
+
           <div class="search"> 
             <input type="text" class="search-input" placeholder="Search..." name=""> 
                 <a href="#" class="search-icon"> <i class="fa fa-search"></i>
                  </a> 
                </div>
-
-     
 
 </div>     
 </div>
@@ -355,24 +397,25 @@
 
 <!-- brand -->
   <h5 class=" forheading pt-2 pl-lg-5 pl-2">Shop by Brands</h5>
-<ul class="nav nav-pills">
+<!-- <ul class="nav nav-pills"> -->
 <div class="swiper-container pl-lg-5 pl-2">
 
     <div class="swiper-wrapper">
 
        
       <div class="swiper-slide forbrandslide" style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h5 class="forbrandname">
-
-        <li class="active"><a data-toggle="pill" href="#nafees">AL-NAFEES</a></li>
+AL-NAFEES
+       <!--  <li class="active"><a data-toggle="pill" href="#nafees">AL-NAFEES</a></li> -->
       </h5></div>
     
       <div class="swiper-slide forbrandslide" style="background-image:url(img/logo2.jpg);     border-radius: 50%;">
        
           <h5  class="forbrandname">
-        <li><a data-toggle="pill" href="#IM">
+<!--         <li><a data-toggle="pill" href="#IM">
           Imadiator
         </a>
-      </li>
+      </li> -->
+        IMAdiator
         </h5>
         
       </div>
@@ -389,11 +432,11 @@
 <!-- products -->
 
 
-  <div class="tab-content">
+<!--   <div class="tab-content"> -->
 
 
 
-<div id="nafees" class="tab-pane fade-in active">
+<!-- <div id="nafees" class="tab-pane fade-in active"> -->
 
 <div class="container-fluid" style="width: 100%;">
   <h5 class="forheading2 pl-4">Attar</h5>
@@ -828,16 +871,16 @@
      </div>
    </div>
 
-</div><!-- fornafees -->
+<!-- </div> --><!-- fornafees -->
 
 
 
 
 
 
-<div id="IM" class="tab-pane fade">
+<!-- <div id="IM" class="tab-pane fade">
 
-<div class="container-fluid">
+<div class="container-fluid" style="width: 100%;">
   <h5 class="forheading2 pl-4">Attar</h5>
 
 
@@ -851,7 +894,7 @@
 
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -866,12 +909,12 @@
                        </div>
 
 
-<!-- 2nd -->
+2nd
 
             <div class="swiper-slide forproductslide2">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -885,12 +928,12 @@
                           </div>
                        </div>
 
-<!-- 3rd -->
+3rd
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -904,12 +947,12 @@
                           </div>
                        </div>
 
- <!-- 4th -->
+ 4th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -923,12 +966,12 @@
                           </div>
                        </div>
 
- <!-- 5th -->
+ 5th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -942,11 +985,11 @@
                           </div>
                        </div>
 
-<!-- 6th -->
-            <div class="swiper-slide forproductslide2">
+6th
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -960,11 +1003,11 @@
                           </div>
                        </div>
 
- <!-- 7th --> 
-             <div class="swiper-slide forproductslide2">
+ 7th 
+             <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -991,10 +1034,10 @@
        <div class="swiper-wrapper">
             
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1009,12 +1052,12 @@
                        </div>
 
 
-<!-- 2nd -->
+2nd
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1028,12 +1071,12 @@
                           </div>
                        </div>
 
-<!-- 3rd -->
+3rd
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1047,12 +1090,12 @@
                           </div>
                        </div>
 
- <!-- 4th -->
+ 4th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1066,12 +1109,12 @@
                           </div>
                        </div>
 
- <!-- 5th -->
+ 5th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1086,12 +1129,12 @@
                        </div>
 
 
-<!-- 6th -->
+6th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1105,11 +1148,11 @@
                           </div>
                        </div>
 
-  <!-- 7th -->
-              <div class="swiper-slide forproductslide2">
+  7th
+              <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1136,10 +1179,10 @@
        <div class="swiper-wrapper">
             
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1154,12 +1197,12 @@
                        </div>
 
 
-<!-- 2nd -->
+2nd
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1173,12 +1216,12 @@
                           </div>
                        </div>
 
-<!-- 3rd -->
+3rd
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1192,12 +1235,12 @@
                           </div>
                        </div>
 
- <!-- 4th -->
+ 4th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1211,12 +1254,12 @@
                           </div>
                        </div>
 
- <!-- 5th -->
+ 5th
 
-            <div class="swiper-slide forproductslide2">
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1230,11 +1273,11 @@
                           </div>
                        </div>
 
-<!-- 6th -->
-            <div class="swiper-slide forproductslide2">
+6th
+            <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1247,11 +1290,11 @@
                             </div>
                           </div>
                        </div>
-  <!-- 7th-->
-              <div class="swiper-slide forproductslide2">
+   7th
+              <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p3.jpg" alt="Card image cap">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1270,7 +1313,7 @@
      </div>
    </div>
 
-</div><!-- fornafees -->
+</div> --><!-- forIM -->
 
 
 
@@ -1281,8 +1324,23 @@
 
 
 </div><!-- forallbrandproducts -->
-
-
+<section class="home-newsletter">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+  <div class="single">
+    <h2>Looking for something else?</h2>
+  <div class="input-group">
+         <input type="email" class="form-control" placeholder="Drop your item name">
+         <span class="input-group-btn">
+         <button class="btn btn-theme" type="submit">Submiit</button>
+         </span>
+          </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
 <div style="width: 100%; height: 150px; background: #efefef;" class="my-5">
   <h5 class="text-center pt-5" style="color: #bc1821; font-weight: 600;">Want to become Reseller/Stockist ?</h5>
   <div class="d-flex justify-content-center"><button class="btn btn-warning">Join Now</button></div>
@@ -1341,7 +1399,7 @@
          <div class="row my-5 justify-content-center py-5">
              <div class="col-11">
                  <div class="row ">
-                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-0 a">
                          <h3 class="text-muted mb-md-0 mb-5 bold-text">AMC store - Attar & Perfume.</h3>
                      </div>
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12">
@@ -1353,22 +1411,22 @@
                              <li>Portfolio</li>
                          </ul>
                      </div>
-                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+<!--                      <div class="col-xl-2 col-md-4 col-sm-4 col-12">
                          <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
                          <p class="mb-1">605, RATAN ICON BUILDING</p>
                          <p>SEAWOODS SECTOR</p>
-                     </div>
+                     </div> -->
                  </div>
                  <div class="row ">
                      <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
                          <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> AMC store All Rights Reserved.</small>
                      </div>
-                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                   <!--   <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
                          <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
                      </div>
                      <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
                          <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
-                     </div>
+                     </div> -->
                  </div>
              </div>
          </div>
