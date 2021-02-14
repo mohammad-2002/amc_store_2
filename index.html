@@ -16,388 +16,63 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
 
 
 <title>AMC STORE</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-            font-family: 'Montserrat', sans-serif;
-
-    }
-    .forlogo{
-      position: absolute;
-      left: 45%;
-      top: 0;
-      font-family: 'Montserrat', sans-serif;
-    }
-    .forlogoicon{
-      position: absolute;
-      right: 10%;
-      top: 2%;
-      font-size: 24px;
-    }
-
-        .search {
-    width: 100%;
-    margin-bottom: auto;
-    margin-top: 10px;
-    height: 50px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #000;
-}
-
-.search-input {
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    margin-top: 5px;
-    caret-color: transparent;
-    line-height: 20px;
-    transition: width 0.4s linear
-}
-
-.search .search-input {
-    padding: 0 10px;
-    width: 100%;
-    caret-color: #536bf6;
-    font-size: 19px;
-    font-weight: 300;
-    color: black;
-    transition: width 0.4s linear
-}
-.search-icon {
-    height: 34px;
-    width: 34px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #303030;
-    font-size: 10px;
-    bottom: 30px;
-    position: relative;
-    border-radius: 5px
-}
-
-.search-icon:hover {
-    color: #fff !important
-}
-.forheading{
-  font-family: 'Montserrat', sans-serif;
-  color: #bc1821;
-  text-transform: uppercase;
-   font-weight: bolder;
-   font-size: 28px;
-}
-.foroffer{
-  position: relative;
-}
-.offerbtn{
-  position: absolute;
-  top: 24%;
-  right: 44%;
-}
-.forbrandname{
-  position: absolute;
-   bottom: -20%; 
-   left: 25%;
-   text-align: center;
-   text-transform: uppercase;
-   color: #000;
-}
-.forbrandname li a{
-  color: #000;
-}
-.forbrandname li a:active{
-  color: #bc1821;
-}
-
-.swiper-container {
-      width: 100%;
-      padding-top: 10px;
-      padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 200px;
-       height: 200px;
-      }
-      .forheading2{
-        text-transform: uppercase;
-         color: #00bae9; 
-        font-weight: 700;
-      }
-      .forproductslide{
-        height: 330px;
-      /*  width: 220px;*/
-      width: 210px;
-      }
-      .forproductslide2{
-        height: 330px;
-        width: 280px;
-      }
-
-      .forcard{
-         width: 14rem; 
-         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
-
-/*.forcard{
-  background:#404040;
-   color: #fefefe;
-   font-family: 'Montserrat', sans-serif;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 18rem;
-
-}*/
-.card-body{
-  padding: 6px;
-}
-.card-title{
-        font-family: 'Montserrat', sans-serif;
-         font-size: 18px;
-         font-weight: bold;
-}
-.forbutton{
-  border: 9px solid #fff;
-}
- .fordiscount{
-  position: absolute;
-  top: 10px;
-  background: #bc1821;
-  border-radius: 0 11px 11px 0;
-  color: #fff;
-  font-size: 12px;
-  padding: 2px;
-  padding-right: 5px;
-}
-.forquicklook{
-  position: absolute;
-  right: 5px;
-  top: 10px;
-  background: #efefef;
-  background-blend-mode: lighten;
-  padding: 0px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.forquicklook i{
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
- font-size: 12px;
-}
-.forbtn{
-  background: #00ade9;
-  position: absolute; 
-   right: 5px; 
-  top: 86%;
-  border: none;
-  outline: none;
-}
-.swiper-slide {
-         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
-}
-
-.home-newsletter {
-padding: 30px 0;
-background: #fff;
-}
-
-.home-newsletter .single {
-max-width: 650px;
-margin: 0 auto;
-text-align: center;
-position: relative;
-z-index: 2;
- }
-.home-newsletter .single h2 {
-font-size: 22px;
-color: #000;
-text-transform: uppercase;
-margin-bottom: 40px; }
-.home-newsletter .single .form-control {
-height: 50px;
-background: rgba(0, 0, 0, 0.3);
-border-color: transparent;
-border-radius: 20px 0 0 20px;
-border: 1px solid #ddd; 
-}
-.home-newsletter .single .form-control:focus {
-box-shadow: none;
-border-color: #243c4f; }
-.home-newsletter .single .btn {
-min-height: 50px; 
-border-radius: 0 20px 20px 0;
-background: #00bae9;
-color: #fff;
-}
- @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-
-
- .container-fluid2 {
-     overflow: hidden;
-     margin-top: 50px;
-     background: #262626;
-     color: #fff !important;
-     margin-bottom: 0;
-     padding-bottom: 0
- }
-
- small {
-     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
- }
-
- .bold-text {
-     color: #989c9e !important
- }
-
- .mt-55 {
-     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
- }
-
- h3 {
-     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
- }
-
- .social {
-     font-size: 21px !important
- }
-
- .rights {
-     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
- }
- .col-lg-3{
-  padding-left: 0px;
- }
-@media(max-width: 1200px){
-  .offerbtn{
-    top: 19%; 
-    right: 35%;
-  }
-}
-
-    @media(max-width: 680px){
-      .forlogo{ 
-        left: 14%;
-        top: -2px;
-      }
-      .forlogoicon{
-        right: 14%;
-
-              }
-      .search{
-          height: 40px;
-          padding: 5px;
-          }
-        .forbrandslide{
-           width: 55px;
-           height: 55px;
-               box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-          }
- 
-          .forheading{
-            font-size: 16px;
-          }
-          .offerbtn{
-                right: 30%;
-                top: 18%;
-                height: 22px;
-                width: 70px;
-                font-size: 10px;
-                line-height: 0.6;  
-          }
-          .forbrandname{
-            bottom:-60%;
-            font-size: 10px;
-            left: 5%;
-            padding-top: 5px;
-            font-weight: 600;
-          }
-          .forproductslide{
-            width: 150px;
-            height: 270px;
-          }
-/*          .forproductslide2{
-              width: 170px;
-              height: 280px;
-          }*/
-/*           .forproductslide2{
-              width: 170px;
-              height: 270px;
-          }*/
-          .forcard{
-            width: 10rem;
-          }
-          .card-title{
-             font-size: 13px;
-             line-height: 0.5;
-             font-weight: bold;
-          }
-          .forcardtitle2{
-            font-size: 10px; 
-            line-height: 1;
-          }
-          .forbtn{
-            top: 81%;
-          }
-)
-
-
-/*new*/
-
-  </style>
 </head>
 
 
 <body>
 <!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
   <nav>
-  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left mb-5" style="display:none;" id="mySidebar">
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left mb-5" style="display:none; z-index: 999;" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
 
   <a href="#" class="w3-bar-item w3-button">Home</a>
- <div class="w3-dropdown-hover">
-    <button class="w3-button">Shop by Brand
-      <i class="fa fa-caret-down"></i>
+  <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc()">
+      Shop by Brand <i class="fa fa-caret-down"></i>
     </button>
-    <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button" style="background: #ddd;">AL-NAFEES</a>
-      <a href="#" class="w3-bar-item w3-button"  style="background: #ddd;">IMADIATTAR</a>
+    <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+      <a href="#" class="w3-bar-item w3-button">Imdaiattar</a>
     </div>
-  </div> 
+  </div>
+
+  <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc2()">
+      Shop by category <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop2" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">Attar</a>
+      <a href="#" class="w3-bar-item w3-button">Perfume</a>
+    </div>
+  </div>
+
   <a href="#" class="w3-bar-item w3-button">My Cart</a>
- <div class="w3-dropdown-hover">
-    <button class="w3-button">My Account
-      <i class="fa fa-caret-down"></i>
+   <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc3()">
+      My Account <i class="fa fa-caret-down"></i>
     </button>
-    <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button" style="background: #ddd;">My Order</a>
-      <a href="#" class="w3-bar-item w3-button"  style="background: #ddd;">My Address</a>
+    <div id="demoDrop3" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">My Order</a>
+      <a href="#" class="w3-bar-item w3-button">My Address</a>
     </div>
-  </div> 
+  </div>
+
   <a href="#" class="w3-bar-item w3-button">My Whislist</a>
-  <div class="w3-dropdown-hover">
-    <button class="w3-button">Want to be become<br> Reseller?
-      <i class="fa fa-caret-down"></i>
+    <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc4()">
+    Want to become<br>reseller? <i class="fa fa-caret-down"></i>
     </button>
-    <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button" style="background: #ddd;"><i class="fa fa-whatsapp">&nbsp;Message on whatsapp</i></a>
+    <div id="demoDrop4" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
 
     </div>
-  </div> 
+  </div>
+
  <a href="#" class="w3-bar-item w3-button">Login / Logout</a>
 </div>
 
@@ -451,8 +126,8 @@ color: #fff;
     <div class="swiper-wrapper">
 
        
-      <div class="swiper-slide forbrandslide" style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h5 class="forbrandname">
-AL-NAFEES
+      <div class="swiper-slide forbrandslide"  style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h5 class="forbrandname">
+ AL-NAFEES
        <!--  <li class="active"><a data-toggle="pill" href="#nafees">AL-NAFEES</a></li> -->
       </h5></div>
     
@@ -463,7 +138,7 @@ AL-NAFEES
           Imadiator
         </a>
       </li> -->
-        IMAdiator
+IMDAIATTAR
         </h5>
         
       </div>
@@ -539,7 +214,7 @@ Brand : AL-NAFEES
 </div>
 <!-- <div id="nafees" class="tab-pane fade-in active"> -->
 
-<div class="container-fluid" style="width: 100%;">
+<div class="container-fluid" style="width: 100%;" id="al">
   <h5 class="forheading2 pl-4">Attar</h5>
 
 
@@ -553,14 +228,13 @@ Brand : AL-NAFEES
 
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
-                         <div class="fordiscount">5% off</div>
-                         <div class="">
-<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModalCenter">
-
-                          <i class="fa fa-search"></i>
-</button>
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                                    <div class="forquicklook">
+                          <span>i</span>
                         </div>
+           </button>
+                         <div class="fordiscount">5% off</div>
                           
                            <div class="card-body">
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
@@ -1554,6 +1228,52 @@ function w3_close() {
 }
 function fornumber(id) {
   id.innerHTML = "+ 1 -";
+}
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+
+  }
+}
+function myDropFunc2() {
+  var x = document.getElementById("demoDrop2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc3() {
+  var x = document.getElementById("demoDrop3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc4() {
+  var x = document.getElementById("demoDrop4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
 }
 </script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
