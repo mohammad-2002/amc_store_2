@@ -12,7 +12,7 @@
     }
     .forlogoicon{
       position: absolute;
-      right: 10%;
+      right: 8%;
       top: 2%;
       font-size: 24px;
     }
@@ -165,14 +165,14 @@
   background: #efefef;
   background-blend-mode: lighten;
   padding: 0px;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
-.forquicklook span{
+.forquicklook i{
   display: flex;
   justify-content: center;
-  margin-top: 0px;
+  margin-top: 4px;
  font-size: 12px;
  font-weight: bolder;
 }
