@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<title>AMC STORE</title>
+<style>
+  @media(max-width: 576px){
+    .forbrandname2{
+      min-width: 120px;
+    }
+    .card-title{
+      font-size: 11px;
+    }
+  }
+</style>
+</head>
+
+
+<body>
+<!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
+  <nav>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left mb-5" style="display:none; z-index: 999;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc()">
+      Shop by Brand <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+      <a href="#" class="w3-bar-item w3-button">Imdaiattar</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc2()">
+      Shop by category <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop2" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">Attar</a>
+      <a href="#" class="w3-bar-item w3-button">Perfume</a>
+    </div>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button">My Cart</a>
+   <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc3()">
+      My Account <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop3" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">My Order</a>
+      <a href="#" class="w3-bar-item w3-button">My Address</a>
+    </div>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button">My Whislist</a>
+    <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc4()">
+    Want to become<br>reseller? <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop4" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
+    </div>
+  </div>
+
+ <a href="#" class="w3-bar-item w3-button">Login / Logout</a>
+</div>
+
+<div id="main">
+<div class="w3" style="background: #bc1821;">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
+<img src="img/bag.png" style="position: absolute; right: 5%; top: 2%;">
+<i class="fa fa-heart-o forlogoicon"></i>
+</div>
+
+</div>
+</nav>
+
+<div  style="background: #efefef; border-bottom: 1px solid #808080;">
+<div class="container pb-2">
+
+ <div class="d-flex justify-content-center px-lg-5 px-1">
+<!--      <i class="fa fa-user forlogin" aria-hidden="true"> Sign up</i> -->
+  <i class="fa fa-map-marker my-auto  mr-4" aria-hidden="true">&nbsp;INDIA</i>
+
+          <div class="search" style="margin-bottom: 8px;"> 
+            <input type="text" class="search-input" placeholder="Search..." name=""> 
+                <a href="#" class="search-icon"> <i class="fa fa-search"></i>
+                 </a> 
+               </div>
+
+</div>     
+</div>
+</div>
+
+<h2 class="text-center mb-3">ATTAR</h2>
+<!-- brand -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 mb-2"><span class=" pl-3" style="font-weight: 600;">Choose your Brand </span></div>
+<div class="col-3 forbrandname2"> AL-NAFEES</div>
+<div class="col-3 forbrandname2"> AL-NAFEES </div>
+<div class="col-3 forbrandname2"> AL-NAFEES </div>
+
+   </div>
+</div>
+<div class="container">
+  <div class="row">
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+  <div  class="col-lg-2 col-md-6 col-sm-6 col-6 py-3 d-flex justify-content-center">
+                 <div class="card forcard">
+                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                         <div class="fordiscount">5% off</div>
+                           <div class="card-body">
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                               <h6 class="forcardtitle2">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+
+
+  </div>
+</div>
+
+
+   <script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function fornumber(id) {
+  id.innerHTML = "+ 1 -";
+}
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+
+  }
+}
+function myDropFunc2() {
+  var x = document.getElementById("demoDrop2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc3() {
+  var x = document.getElementById("demoDrop3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc4() {
+  var x = document.getElementById("demoDrop4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+</script> 
+</body>
+</html>
