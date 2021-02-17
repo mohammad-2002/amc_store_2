@@ -28,17 +28,32 @@
     padding-top: 0px;
     padding-bottom: 40px;
 }
-  .forcategoryslide{
+ /* .forcategoryslide{
     width: 120px;
     height: 15px;
     box-shadow: none;
     display: flex;
     justify-content: center;
   }
-
+*/
+.forcategoryslide{
+  width: 80px;
+  height: 78px;
+  background: #EEFBFF;
+  border-radius: 50%;
+  position: relative;
+      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 0%);
+}
+.forcategoryslide h5{
+  font-size: 12px;
+  white-space: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
   @media(max-width: 576px){
   .forcategoryslide{
-    width: 60px;
+    width: 80px;
   }
   .forcategoryslide h5{
   font-size: 14px;
@@ -143,20 +158,22 @@
 </div>
  -->
  <h5 class="pl-3 pl-lg-5">Change Category</h5>
-<div class="swiper-container pl-2 ">
+<div class="swiper-container pl-2 pt-2">
     <div class="swiper-wrapper">
 <!--             <div class="swiper-slide forcategoryslide2"><h5 class="">Choose Category</h5></div>
  -->
       <div class="swiper-slide forcategoryslide"><h5 class="" style="color: #bc1821;">Attar</h5></div>
-           <div class="swiper-slide forcategoryslide"><h5 class="">Perfume Spray</h5></div>
+            <div class="swiper-slide forcategoryslide"><h5 class="">Perfume<br>&nbsp;&nbsp;spray</h5></div>
+
       <div class="swiper-slide forcategoryslide"><h5 class="">Lotion</h5></div>
       <div class="swiper-slide forcategoryslide"><h5 class="">Roll On</h5></div>
       <div class="swiper-slide forcategoryslide"><h5 class="">Pocket Shot</h5></div>
       <div class="swiper-slide forcategoryslide"><h5 class="">Oudh</h5></div>
       <div class="swiper-slide forcategoryslide"><h5 class="">Bhukhur</h5></div>
       <div class="swiper-slide forcategoryslide"><h5 class="">Air Freshner</h5></div>
-
     </div>
+        <div class="swiper-pagination"></div>
+
   </div>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -233,7 +250,7 @@ Brand : AL-NAFEES
 
 <h2 class="text-center mt-3">ATTAR</h2>
 
-<div class="container-fluid mt-3" style="width: 100%;  padding-left: 7px; padding-right: 0px;" id="al">
+<div class="container-fluid mt-3" style="width: 100%; padding-left: 7px; padding-right: 0px;" id="al">
   <h5 class="forheading2 pl-4">AL NAFEES</h5>
 
 
@@ -391,7 +408,7 @@ Brand : AL-NAFEES
    </div>
 
 
-<div class="container-fluid mt-3" style=" padding-left: 7px; padding-right: 0px;">
+<div class="container-fluid mt-3">
   <h5 class="forheading2 pl-4">IMADIATTAR</h5>
 
   <div class="swiper-container">
@@ -609,10 +626,14 @@ function myDropFunc4() {
         modifier: 1,
         slideShadows: false,
       },
-     pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
+     // pagination: {
+     //    el: '.swiper-pagination',
+     //    type: 'progressbar',
 
+     //  },
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
       },
       navigation: {
         nextEl: '.swiper-button-next',
