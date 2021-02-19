@@ -8,7 +8,7 @@
       position: absolute;
       left: 45%;
       top: 0;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Abel', sans-serif;
     }
     .forlogoicon{
       position: absolute;
@@ -84,8 +84,9 @@
 }
 .forbrandname{
   position: absolute;
-   bottom: -20%; 
-   left: 25%;
+   bottom: -25%; 
+   left: 50%;
+   transform: translate(-50%,-50%);
    text-align: center;
    text-transform: uppercase;
    color: #000;
@@ -115,7 +116,7 @@
         font-weight: 700;
       }
       .forproductslide{
-        height: 330px;
+        height: 365px;
       /*  width: 220px;*/
       width: 210px;
       }
@@ -175,6 +176,7 @@
   margin-top: 4px;
  font-size: 12px;
  font-weight: bolder;
+ 
 }
 .forbtn{
   background: #00ade9;
@@ -307,6 +309,7 @@ color: #fff;
           .forproductslide{
             width: 150px;
             height: 270px;
+
           }
 /*          .forproductslide2{
               width: 170px;
@@ -332,3 +335,4 @@ color: #fff;
             top: 81%;
           }
 )
+--swiper-theme-color: #bc1821;
