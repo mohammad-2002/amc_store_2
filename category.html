@@ -45,22 +45,15 @@
  box-shadow: none;
 }
 .forcategoryslide h4{
-
   font-size: 16px;
+  width: 60px;
   white-space: normal;
-  display: flex;
-  justify-content: center;
+  text-overflow: ellipsis; 
+ margin-left: 25px;
   margin-top: 30px;
+  text-align: center;
 }
-  @media(max-width: 576px){
-  .forcategoryslide{
-  
-  }
-  .forcategoryslide h5{
-  font-size: 14px;
-}
-  
-  }
+
 </style>
 </head>
 
@@ -164,16 +157,17 @@
 <!--             <div class="swiper-slide forcategoryslide2"><h5 class="">Choose Category</h5></div>
  -->
       <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-3">Attar</h4></div>
-      <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-2">Perfume</h4><h4 style="margin-top: 0; line-height: 0;">spray</h4></div>
+      <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-2">Perfume <!-- </h4><h4 style="margin-top: 0; line-height: 0;"> -->spray</h4></div>
       <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-3">Lotion</h4></div>
       <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-3">Roll on</h4></div>
-      <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-1">Air</h4><h4 style="margin-top: 0; line-height: 0;"> Freshner</h4></div>
-      <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-2">Pocket</h4><h4 style="margin-top: 0; line-height: 0;"> Shot</h4></div>
+      <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);">
+        <h4 class="pt-1">Air <!-- </h4> --><!-- <h4 style="margin-top: 0; line-height: 0;"> -->Freshner</h4></div>
+      <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-2">Pocket <!-- </h4><h4 style="margin-top: 0; line-height: 0;">  -->Shot</h4></div>
       <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-3">Oudh</h4></div>
       <div class="swiper-slide forcategoryslide" style="background-image:url(img/c_img3.png);"><h4 class="pt-3">Bukhur</h4></div>
 
     </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination" style="top: 90%; height: 2px;"></div>
 
   </div>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -261,7 +255,7 @@ Brand : AL-NAFEES
        <div class="swiper-wrapper">
             
 
-            <div class="swiper-slide forproductslide">
+            <div class="swiper-slide forproductslide" style="height: 280px;"><!-- backend time aa change karvanu che -->
 
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
@@ -409,7 +403,7 @@ Brand : AL-NAFEES
    </div>
 
 
-<div class="container-fluid mt-3">
+<div class="container-fluid mt-3" style="padding-left: 7px; padding-right: 0px;">
   <h5 class="forheading2 pl-4">IMADIATTAR</h5>
 
   <div class="swiper-container">
@@ -668,18 +662,18 @@ function myDropFunc4() {
      pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',
-
-
       },
-      pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   dynamicBullets: true,
+      // },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    });
+    }); 
+
+
 </script> 
 </body>
 </html>
