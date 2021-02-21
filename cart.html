@@ -44,6 +44,28 @@
     margin-left: 10px;
     }
   }
+  .quantity {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.quantity input {
+  width: 3rem;
+  text-align: center;
+}
+
+.quantity button {
+  background: none;
+  border: none;
+  width: 2rem;
+  outline: none;
+  background: #ddd;
+
+}
+
 </style>
 
 </head>
@@ -120,11 +142,6 @@
       <div class="col-12">
    <div class="table-responsive" style="border: none;">
      <table class="table">
-       <thead>
-         <tr>
-
-         </tr>
-       </thead>
        <tbody>
          <tr>
            <td>
@@ -135,31 +152,14 @@
             <h6 class="text-muted" style="font-size: 12px; line-height: 0.5;">Brand : AL NAFEES </h6>
            
              <h5 style="font-size: 16px; line-height: 0.8;">Price : <span style="color: #bc1821;">  &#8377; 650 </span></h5>
-<div style="width: 100px;">
-<div class="input-group mb-3" >
-                <span class="input-group-btn" style="background: #ddd;">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" style="background: #ddd;">
-                  <span class="glyphicon glyphicon-minus"></span>
-                </button>
-                </span>
-                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10" style="width: 50px; text-align: center;">
-                <span class="input-group-btn" style="background: #ddd;">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="background: #ddd">
-                  <span class="glyphicon glyphicon-plus"></span>
-                </button>
-                </span>
-            </div>
-        </div>
 
-  <!--                <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div> -->
+                       <div class=" d-flex  justify-content-between px-0">
+                          <div class="quantity">
+                            <button class="dec-btn p-0"><i class="fa fa-minus"></i></button>
+                            <input class="form-control form-control-sm border-0 shadow-0 p-0" type="text" value="1"/>
+                            <button class="inc-btn p-0"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
              <div style="line-height: 0.6;">
                <button class="btn" style="background: #ddd;"> Buy Later</i></button>
                <span class="px-3" style="background: #ddd; padding: 8px; border-radius: 5px; margin-top: 3px;">
@@ -173,21 +173,13 @@
      </table>
    </div>
   </div>
-
  </div>
 
 <div style="border-bottom: 1px solid #808080;"></div>
-
-
-  <div class="row">
-          <div class="col-12">
+ <div class="row">
+      <div class="col-12">
    <div class="table-responsive" style="border: none;">
      <table class="table">
-       <thead>
-         <tr>
-
-         </tr>
-       </thead>
        <tbody>
          <tr>
            <td>
@@ -198,31 +190,13 @@
             <h6 class="text-muted" style="font-size: 12px; line-height: 0.5;">Brand : AL NAFEES </h6>
            
              <h5 style="font-size: 16px; line-height: 0.8;">Price : <span style="color: #bc1821;">  &#8377; 650 </span></h5>
-<div style="width: 100px;">
-<div class="input-group mb-3" >
-                <span class="input-group-btn" style="background: #ddd;">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" style="background: #ddd;">
-                  <span class="glyphicon glyphicon-minus"></span>
-                </button>
-                </span>
-                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10" style="width: 50px; text-align: center;">
-                <span class="input-group-btn" style="background: #ddd;">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]" style="background: #ddd">
-                  <span class="glyphicon glyphicon-plus"></span>
-                </button>
-                </span>
-            </div>
-        </div>
-
-  <!--                <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div> -->
+                                <div class="d-flex align-items-center justify-content-between">
+                          <div class="quantity">
+                            <button class="dec-btn p-0"><i class="fa fa-minus"></i></button>
+                            <input class="form-control form-control-sm border-0 shadow-0 p-0" type="text" value="1"/>
+                            <button class="inc-btn p-0"><i class="fa fa-plus"></i></button>
+                          </div>
+                        </div>
              <div style="line-height: 0.6;">
                <button class="btn" style="background: #ddd;"> Buy Later</i></button>
                <span class="px-3" style="background: #ddd; padding: 8px; border-radius: 5px; margin-top: 3px;">
@@ -236,12 +210,13 @@
      </table>
    </div>
   </div>
-
  </div>
-</div>
+
 <div style="border-bottom: 1px solid #808080;"></div>
-    
-  </div>
+
+
+
+</div>
 
 <script>
   function w3_open() {
@@ -372,6 +347,18 @@ $(".input-number").keydown(function (e) {
             e.preventDefault();
         }
     });
+
+   $('.dec-btn').click(function () {
+          var siblings = $(this).siblings('input');
+          if (parseInt(siblings.val(), 10) >= 1) {
+              siblings.val(parseInt(siblings.val(), 10) - 1);
+          }
+      });
+
+      $('.inc-btn').click(function () {
+          var siblings = $(this).siblings('input');
+          siblings.val(parseInt(siblings.val(), 10) + 1);
+      });
 </script>
 </body>
 </html>
