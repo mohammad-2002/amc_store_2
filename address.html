@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" type="text/css" href="style.css">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
 
 <title>AMC STORE</title>
 
@@ -57,9 +59,6 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-
-
 
 
 </style>
@@ -136,7 +135,7 @@ input[type=submit] {
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
   <label class="form-check-label" for="flexRadioDefault1">
   Thakkar Faliya, near apollo hospital
-  godhra,<br> 398989    <a href="#">Edit</a>
+  godhra,<br> 398989    <a href="#" style="color: #02abe9">Edit</a>
   </label>
 </div>
 <hr>
@@ -146,7 +145,7 @@ input[type=submit] {
     Godi Road, opposite Apollo hospital
     baroda, <br>
     3200404
-    <a href="#">Edit</a>
+    <a href="#" style="color: #02abe9">Edit</a>
   </label>
 </div>
 <hr>
@@ -155,11 +154,11 @@ input[type=submit] {
   <label class="form-check-label" for="flexRadioDefault2">
     Godi Road, opposite Apollo hospital
     Dahod, <br>
-    3200409     <a href="#">Edit</a>
+    3200409     <a href="#" style="color: #02abe9">Edit</a>
   </label>
 </div>
 <hr>
-<button class="btn btn-info">Deliver to this address</button>
+<button class="btn btn-info" style="width: 100%; font-weight: 600; letter-spacing: 1px;">Deliver to this address</button>
 <!-- <button class="btn btn-secondary">Edit Address</button> -->
 <br>
 <br>
@@ -169,7 +168,7 @@ input[type=submit] {
 <form action="/action_page.php">
       <label for="country"></label>
     <select id="country" name="country">
-      <option value="australia">Australia</option>
+      <option value="australia">India</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
@@ -182,25 +181,25 @@ input[type=submit] {
 
 
     <label for="fname"></label>
-    <input type="text" id="fname" name="firstname" placeholder="Your Full name..">
+    <input type="text" id="fname" name="firstname" required="" placeholder="Your Full name..">
 
     <label for="mnumber"></label>
-    <input type="number" id="mnumber" name="mnumber" placeholder="Your mobile number..">
+    <input type="number" id="mnumber" name="mnumber" required="" placeholder="Your mobile number..">
     
        <label for="pincode"></label>
-    <input type="number" id="pincode" name="lastname" placeholder="PIN code">
+    <input type="number" id="pincode" name="lastname" required="" placeholder="PIN code">
 
         <label for="flatno"></label>
-    <input type="text" id="flatno" name="flatno" placeholder="Flat, House No., Building, company, aprtment etc..">
+    <input type="text" id="flatno" name="flatno" required="" placeholder="Flat, House No., Building, company, aprtment etc..">
 
     <label for="area"></label>
-    <input type="text" id="area" name="area" placeholder="Area, Colony, Street, sector">
+    <input type="text" id="area" name="area" required="" placeholder="Area, Colony, Street, sector">
     
        <label for="landmark"></label>
-    <input type="text" id="landmark" name="landmark" placeholder="Enter landmark">
+    <input type="text" id="landmark" name="landmark"  placeholder="Enter landmark">
 
        <label for="town"></label>
-    <input type="text" id="town" name="town" placeholder="Town/Village">
+    <input type="text" id="town" name="town" required="" placeholder="Town/Village">
 
 
 
