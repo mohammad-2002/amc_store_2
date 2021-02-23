@@ -103,6 +103,9 @@
 <div class="container my-2">
   <h4>Select Delievery Address</h4>
 <div class="bg-white">
+
+
+<!-- <div id="content">
   <form class="my-4" style="position: relative;">
     <input type="radio" id="male" name="gender" value="male" checked style="position: absolute; top: 10%; margin-left: 4px;">
 
@@ -112,18 +115,59 @@
   </div>
 </form>
 
-  <button class="btn btn-info">Delivery to this address</button>
+  <button class="btn btn-info" id="address1">Delivery to this address</button>
   <br>
   <br>
 <button class="btn btn-secondary">Edit address</button>
 <br>
 <br>
 </div>
+
+<div>
+
+  <button id="address2">     <input type="radio" id="female" name="gender" value="female"  style="position: absolute; top: 30%; margin-left: 4px;">
+</button>
+   Badri Manzil, Thakkar Faliya
+   Dahod
+</div> -->
+<button id="add1"><input type="radio" name=""></button>
+
+
+<div id="content">
+<p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
 </div>
-<hr>
+<div>
+<button id="add2"><input type="radio"   name="gender" value="male"></button>
+  hello world
+</div>
+<div>
+  
+</div>
+<div>
+  <button id="add3"><input type="radio" name=""  name="gender" value="female"></button>
+  hhello world 2
+</div>
+</div>
+
+</div>
+
 
 
   <script>
+let add1  =document.querySelector('#add1');
+let add2  =document.querySelector('#add2');
+let add3  =document.querySelector('#add3');
+let content  =document.querySelector('#content');
+let p  =document.querySelector('p');
+
+add2.addEventListener('click', () =>{
+  p.innerHTML ="Hello World";
+});
+
+add3.addEventListener('click', () =>{
+  p.innerHTML ="Hello World2";
+});
+
   function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
 }
