@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<title>AMC STORE</title>
+
+<style>
+ body{
+  background: #efefef;
+ }
+
+    @media (max-width: 680px){
+.forlogo {
+    left: 14%;
+    top: -10px;
+}
+}
+</style>
+</head>
+<body>
+ <nav>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left mb-5" style="display:none; z-index: 999;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+
+  <a href="imdex.html" class="w3-bar-item w3-button">Home</a>
+  <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc()">
+      Shop by Brand <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+      <a href="#" class="w3-bar-item w3-button">Imdaiattar</a>
+    </div>
+  </div>
+
+  <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc2()">
+      Shop by category <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop2" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="category.html" class="w3-bar-item w3-button">Attar</a>
+      <a href="#" class="w3-bar-item w3-button">Perfume</a>
+    </div>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button">My Cart</a>
+   <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc3()">
+      My Account <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop3" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">My Order</a>
+      <a href="#" class="w3-bar-item w3-button">My Address</a>
+    </div>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button">My Whislist</a>
+    <div class="w3-dropdown-click">
+    <button class="w3-button" onclick="myDropFunc4()">
+    Want to become<br>reseller? <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="demoDrop4" class="w3-dropdown-content w3-bar-block w3-white w3-card">
+      <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
+    </div>
+  </div>
+
+ <a href="#" class="w3-bar-item w3-button">Login / Logout</a>
+</div>
+
+<div id="main">
+<div class="w3" style="background: #bc1821;">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
+<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 2%;"></a>
+  <a href="wishlist.html" style="text-decoration: none; color: #000;"><i class="fa fa-heart-o forlogoicon"></i></a>
+</div>
+
+</div>
+</nav>
+
+<div class="container my-2">
+  <h4>Select Delievery Address</h4>
+<div class="bg-white">
+  <form class="my-4" style="position: relative;">
+    <input type="radio" id="male" name="gender" value="male" checked style="position: absolute; top: 10%; margin-left: 4px;">
+
+  <textarea rows="4" cols="40" style="border: none; padding: 5px;">
+    &nbsp;Husani manzil, godi road
+    &nbsp;Dahod.
+  </textarea>
+</form>
+
+  <button class="btn btn-info">Delivery to this address</button>
+  <br>
+  <br>
+<button class="btn btn-secondary">Edit address</button>
+<br>
+<br>
+</div>
+</div>
+<hr>
+
+
+  <script>
+  function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function fornumber(id) {
+  id.innerHTML = "+ 1 -";
+}
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+
+  }
+}
+function myDropFunc2() {
+  var x = document.getElementById("demoDrop2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc3() {
+  var x = document.getElementById("demoDrop3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc4() {
+  var x = document.getElementById("demoDrop4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+</script>
+</body>
+</html>
