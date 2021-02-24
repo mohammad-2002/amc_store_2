@@ -32,49 +32,51 @@
   onclick="w3_close()">Close &times;</button>
 
   <a href="imdex.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
-  <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc()">
-      <img src="img/brand.png"> Shop by Brand <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
-      <a href="#" class="w3-bar-item w3-button">Imdaiattar</a>
-    </div>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc" class="w3-hide w3-white w3-card">
+    <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button">Imadiattar</a>
   </div>
 
-  <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc2()">
-      <img src="img/cat2.png"> Shop by category <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop2" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="category.html" class="w3-bar-item w3-button">Attar</a>
-      <a href="#" class="w3-bar-item w3-button">Perfume</a>
-    </div>
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="category.html" class="w3-bar-item w3-button">Attar</a>
+    <a href="#" class="w3-bar-item w3-button">Perfume</a>
   </div>
 
-  <a href="#" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
-   <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc3()">
-    <i class="fa fa-user"></i>  My Account <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop3" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#" class="w3-bar-item w3-button">My Order</a>
-      <a href="#" class="w3-bar-item w3-button">My Address</a>
-    </div>
+
+  <a href="cart.html" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+  <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc3" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button">My order</a>
+    <a href="#" class="w3-bar-item w3-button">My Address</a>
   </div>
+
+
 
   <a href="#" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
-    <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc4()">
-    <img src="img/reseller.png"> Want to become<br>reseller? <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop4" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
 
-    </div>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+  <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc4" class="w3-hide w3-white w3-card">
+     <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
   </div>
 
- <a href="#" class="w3-bar-item w3-button">Login / Logout</a>
+
+
+ <a href="#" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
 </div>
 
 <div id="main">
@@ -283,25 +285,20 @@ Brand : AL-NAFEES
 <!-- 2nd -->
 
         <div class="swiper-slide forproductslide">
-
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
-             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
-            </button>
-                                    <div class="" id="color">
-<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
-                          <i class="fa fa-heart-o"></i>
-  </button>                      
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
                         </div>
-          
                          <div class="fordiscount">5% off</div>
-                          
                            <div class="card-body">
                               <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
-
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
-                           </button>
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -313,13 +310,21 @@ Brand : AL-NAFEES
                        </div>
 <!-- 3rd -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -332,13 +337,21 @@ Brand : AL-NAFEES
 
  <!-- 4th -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -351,13 +364,21 @@ Brand : AL-NAFEES
 
  <!-- 5th -->
 
-            <div class="swiper-slide forproductslide">
+           <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -369,13 +390,21 @@ Brand : AL-NAFEES
                        </div>
 
 <!-- 6th -->
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -387,13 +416,21 @@ Brand : AL-NAFEES
                        </div>
 
  <!-- 7th --> 
-             <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -402,7 +439,7 @@ Brand : AL-NAFEES
                               </div>
                             </div>
                           </div>
-                       </div>                     
+                       </div>                
 </div>
       <div class="swiper-pagination mt-lg-4" style="top: 94%; height: 2px;"></div>
      </div>
@@ -418,12 +455,24 @@ Brand : AL-NAFEES
             
 
             <div class="swiper-slide forproductslide">
-               <div  class="col-lg-3 col-md-6 col-sm-6">
+                 <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            </button>
+                                    <div class="" id="color">
+<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i>
+  </button>                      
+                        </div>
+          
                          <div class="fordiscount">5% off</div>
+                          
                            <div class="card-body">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                           </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -437,13 +486,21 @@ Brand : AL-NAFEES
 
 <!-- 2nd -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -453,16 +510,23 @@ Brand : AL-NAFEES
                             </div>
                           </div>
                        </div>
-
 <!-- 3rd -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -475,13 +539,21 @@ Brand : AL-NAFEES
 
  <!-- 4th -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -494,13 +566,21 @@ Brand : AL-NAFEES
 
  <!-- 5th -->
 
-            <div class="swiper-slide forproductslide">
+           <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -510,17 +590,23 @@ Brand : AL-NAFEES
                             </div>
                           </div>
                        </div>
-
 
 <!-- 6th -->
-
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -531,14 +617,22 @@ Brand : AL-NAFEES
                           </div>
                        </div>
 
-  <!-- 7th -->
-              <div class="swiper-slide forproductslide">
+ <!-- 7th --> 
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -547,7 +641,7 @@ Brand : AL-NAFEES
                               </div>
                             </div>
                           </div>
-                       </div>                     
+                       </div>                  
 </div>
       <div class="swiper-pagination mt-lg-4" style="top: 94%; height: 2px;"></div>
      </div>
@@ -563,12 +657,24 @@ Brand : AL-NAFEES
             
 
             <div class="swiper-slide forproductslide">
-               <div  class="col-lg-3 col-md-6 col-sm-6">
+                             <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            </button>
+                                    <div class="" id="color">
+<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i>
+  </button>                      
+                        </div>
+          
                          <div class="fordiscount">5% off</div>
+                          
                            <div class="card-body">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                           </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -582,13 +688,21 @@ Brand : AL-NAFEES
 
 <!-- 2nd -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -598,16 +712,23 @@ Brand : AL-NAFEES
                             </div>
                           </div>
                        </div>
-
 <!-- 3rd -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -620,13 +741,21 @@ Brand : AL-NAFEES
 
  <!-- 4th -->
 
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -639,13 +768,21 @@ Brand : AL-NAFEES
 
  <!-- 5th -->
 
-            <div class="swiper-slide forproductslide">
+           <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -657,13 +794,21 @@ Brand : AL-NAFEES
                        </div>
 
 <!-- 6th -->
-            <div class="swiper-slide forproductslide">
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -673,14 +818,23 @@ Brand : AL-NAFEES
                             </div>
                           </div>
                        </div>
-  <!-- 7th-->
-              <div class="swiper-slide forproductslide">
+
+ <!-- 7th --> 
+        <div class="swiper-slide forproductslide">
                <div  class="col-lg-3 col-md-6 col-sm-6">
                  <div class="card forcard">
-                       <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+               <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+                 </button>
+                      <div class="" id="color">
+                 <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+                          <i class="fa fa-heart-o"></i></button>                      
+                        </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
-                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                              <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                             </button>
                                <h6 class="forcardtitle2">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
@@ -689,7 +843,7 @@ Brand : AL-NAFEES
                               </div>
                             </div>
                           </div>
-                       </div>
+                       </div>         
 
 </div>
       <div class="swiper-pagination mt-lg-4" style="top: 95%; height: 2px;"></div>
@@ -825,52 +979,53 @@ function w3_close() {
 function fornumber(id) {
   id.innerHTML = "+ 1 -";
 }
-function myDropFunc() {
-  var x = document.getElementById("demoDrop");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
   } else { 
     x.className = x.className.replace(" w3-show", "");
     x.previousElementSibling.className = 
     x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
 
-  }
-}
-function myDropFunc2() {
-  var x = document.getElementById("demoDrop2");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
-  }
-}
-function myDropFunc3() {
-  var x = document.getElementById("demoDrop3");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
-  }
-}
-function myDropFunc4() {
-  var x = document.getElementById("demoDrop4");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
-  }
-}
+
 
 function datachange(){
   document.getElementById(color).style.background ="#bc1821";
