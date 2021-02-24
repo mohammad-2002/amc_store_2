@@ -66,7 +66,7 @@
   height: 3rem;
   outline: none;
   background: #ddd;
- border-radius: 4px;
+
 }
 
 </style>
@@ -81,50 +81,52 @@
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
 
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc()">
-      Shop by Brand <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
-      <a href="#" class="w3-bar-item w3-button">Imdaiattar</a>
-    </div>
+  <a href="imdex.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc" class="w3-hide w3-white w3-card">
+    <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button">Imadiattar</a>
   </div>
 
-  <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc2()">
-      Shop by category <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop2" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="category.html" class="w3-bar-item w3-button">Attar</a>
-      <a href="#" class="w3-bar-item w3-button">Perfume</a>
-    </div>
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="category.html" class="w3-bar-item w3-button">Attar</a>
+    <a href="#" class="w3-bar-item w3-button">Perfume</a>
   </div>
 
-  <a href="#" class="w3-bar-item w3-button">My Cart</a>
-   <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc3()">
-      My Account <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop3" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#" class="w3-bar-item w3-button">My Order</a>
-      <a href="#" class="w3-bar-item w3-button">My Address</a>
-    </div>
+
+  <a href="cart.html" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+  <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc3" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button">My order</a>
+    <a href="#" class="w3-bar-item w3-button">My Address</a>
   </div>
 
-  <a href="#" class="w3-bar-item w3-button">My Whislist</a>
-    <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc4()">
-    Want to become<br>reseller? <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop4" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
 
-    </div>
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+  <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc4" class="w3-hide w3-white w3-card">
+     <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
   </div>
 
- <a href="#" class="w3-bar-item w3-button">Login / Logout</a>
+
+
+ <a href="#" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
 </div>
 
 <div id="main">
@@ -157,7 +159,7 @@
              <h5 style="font-size: 16px; line-height: 0.8;">Price : <span style="color: #bc1821;">  &#8377; 650 </span></h5>
 
                        <div class=" d-flex  justify-content-between px-0 py-2">
-                          <div class="quantity" style="border: 2px solid #dedede;">
+                          <div class="quantity" style="border: 2px solid #dedede; border-radius: 5px;">
                             <button class="dec-btn p-0 " style="border-radius: 4px;"><i class="fa fa-minus"></i></button>
                             <input class="form-control form-control-sm border-0 shadow-0 p-0" type="text" value="1"/ style="height: 30px;">
                             <button class="inc-btn p-0"><i class="fa fa-plus"></i></button>
@@ -193,7 +195,7 @@
            
              <h5 style="font-size: 16px; line-height: 0.8;">Price : <span style="color: #bc1821;">  &#8377; 650 </span></h5>
                                 <div class="d-flex align-items-center justify-content-between py-2">
-                          <div class="quantity"  style="border: 2px solid #dedede;">
+                          <div class="quantity"  style="border: 2px solid #dedede; border-radius: 5px;">
                             <button class="dec-btn p-0"><i class="fa fa-minus"></i></button>
                             <input class="form-control form-control-sm border-0 shadow-0 p-0" type="text" value="1"/ style="height: 30px;">
                             <button class="inc-btn p-0"><i class="fa fa-plus"></i></button>
@@ -290,21 +292,8 @@ function w3_close() {
 function fornumber(id) {
   id.innerHTML = "+ 1 -";
 }
-function myDropFunc() {
-  var x = document.getElementById("demoDrop");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
-
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
-
-  }
-}
-function myDropFunc2() {
-  var x = document.getElementById("demoDrop2");
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -314,8 +303,8 @@ function myDropFunc2() {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
-function myDropFunc3() {
-  var x = document.getElementById("demoDrop3");
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -325,8 +314,19 @@ function myDropFunc3() {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
-function myDropFunc4() {
-  var x = document.getElementById("demoDrop4");
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
