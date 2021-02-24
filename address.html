@@ -60,7 +60,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-
 </style>
 </head>
 <body>
@@ -69,56 +68,58 @@ input[type=submit] {
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
 
-  <a href="imdex.html" class="w3-bar-item w3-button">Home</a>
-  <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc()">
-      Shop by Brand <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
-      <a href="#" class="w3-bar-item w3-button">Imdaiattar</a>
-    </div>
+   <a href="imdex.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc" class="w3-hide w3-white w3-card">
+    <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button">Imadiattar</a>
   </div>
 
-  <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc2()">
-      Shop by category <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop2" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="category.html" class="w3-bar-item w3-button">Attar</a>
-      <a href="#" class="w3-bar-item w3-button">Perfume</a>
-    </div>
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="category.html" class="w3-bar-item w3-button">Attar</a>
+    <a href="#" class="w3-bar-item w3-button">Perfume</a>
   </div>
 
-  <a href="#" class="w3-bar-item w3-button">My Cart</a>
-   <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc3()">
-      My Account <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop3" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#" class="w3-bar-item w3-button">My Order</a>
-      <a href="#" class="w3-bar-item w3-button">My Address</a>
-    </div>
+
+  <a href="cart.html" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+  <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc3" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button">My order</a>
+    <a href="#" class="w3-bar-item w3-button">My Address</a>
   </div>
 
-  <a href="#" class="w3-bar-item w3-button">My Whislist</a>
-    <div class="w3-dropdown-click">
-    <button class="w3-button" onclick="myDropFunc4()">
-    Want to become<br>reseller? <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="demoDrop4" class="w3-dropdown-content w3-bar-block w3-white w3-card">
-      <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
 
-    </div>
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+  <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc4" class="w3-hide w3-white w3-card">
+     <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
   </div>
 
- <a href="#" class="w3-bar-item w3-button">Login / Logout</a>
+
+
+ <a href="#" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
 </div>
 
 <div id="main">
 <div class="w3" style="background: #bc1821;">
   <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
-<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
+<a href="index.html"><h2 class="text-white mt-lg-2 forlogo">AMC store</h2></a>
 <a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 2%;"></a>
   <a href="wishlist.html" style="text-decoration: none; color: #000;"><i class="fa fa-heart-o forlogoicon"></i></a>
 </div>
@@ -158,7 +159,7 @@ input[type=submit] {
   </label>
 </div>
 <hr>
-<button class="btn btn-info" style="width: 100%; font-weight: 600; letter-spacing: 1px;">Deliver to this address</button>
+<a href="payment.html"><button class="btn btn-info" style="width: 100%; font-weight: 600; letter-spacing: 1px;">Deliver to this address</button></a>
 <!-- <button class="btn btn-secondary">Edit Address</button> -->
 <br>
 <br>
@@ -168,8 +169,9 @@ input[type=submit] {
 <form action="/action_page.php">
       <label for="country"></label>
     <select id="country" name="country">
-      <option value="india">India</option>
-
+      <option value="australia">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
     </select>
           <label for="state"></label>
     <select id="state" name="state">
@@ -212,6 +214,46 @@ input[type=submit] {
 </div>
 </div>
  
+
+
+  <div class="container-fluid container-fluid2 pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-0 a">
+                         <h3 class="text-muted mb-md-0 mb-5 bold-text">AMC store - Attar & Perfume.</h3>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                         <ul class="list-unstyled">
+                             <li>Home</li>
+                             <li>About</li>
+                             <li>Blog</li>
+                             <li>Portfolio</li>
+                         </ul>
+                     </div>
+<!--                      <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                         <p class="mb-1">605, RATAN ICON BUILDING</p>
+                         <p>SEAWOODS SECTOR</p>
+                     </div> -->
+                 </div>
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> AMC store All Rights Reserved.</small>
+                     </div>
+                   <!--   <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
+                     </div> -->
+                 </div>
+             </div>
+         </div>
+     </footer>
+ </div>
   <script>
 
 
@@ -225,21 +267,8 @@ function w3_close() {
 function fornumber(id) {
   id.innerHTML = "+ 1 -";
 }
-function myDropFunc() {
-  var x = document.getElementById("demoDrop");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
-
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
-
-  }
-}
-function myDropFunc2() {
-  var x = document.getElementById("demoDrop2");
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -249,8 +278,8 @@ function myDropFunc2() {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
-function myDropFunc3() {
-  var x = document.getElementById("demoDrop3");
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -260,8 +289,19 @@ function myDropFunc3() {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
-function myDropFunc4() {
-  var x = document.getElementById("demoDrop4");
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
