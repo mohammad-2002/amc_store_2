@@ -116,7 +116,7 @@
         font-weight: 700;
       }
       .forproductslide{
-        height: 365px;
+        height: 355px;
       /*  width: 220px;*/
       width: 210px;
       }
@@ -127,7 +127,8 @@
 
       .forcard{
          width: 14rem; 
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+         box-shadow: 0px 5px 10px 0 #808080,  0px 5px 10px 0 #808080;
+      /*   border: 0.1rem solid #000;*/
       }
 
 /*.forcard{
@@ -140,11 +141,15 @@
 }*/
 .card-body{
   padding: 6px;
+
 }
 .card-title{
         font-family: 'Montserrat', sans-serif;
          font-size: 18px;
          font-weight: bold;
+}
+.forcardtitle2{
+  margin: 0;
 }
 .forbutton{
   border: 9px solid #fff;
@@ -309,7 +314,7 @@ color: #fff;
           }
           .forproductslide{
             width: 150px;
-            height: 270px;
+            height: 260px;
 
           }
 /*          .forproductslide2{
@@ -331,6 +336,7 @@ color: #fff;
           .forcardtitle2{
             font-size: 10px; 
             line-height: 1;
+            margin: 0;
           }
           .forbtn{
             top: 81%;
