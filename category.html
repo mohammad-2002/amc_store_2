@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,16 +18,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" type="text/css" href="style.css">
-
 
 <title>AMC STORE</title>
 <style>
-  .swiper-container {
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 40px;
-}
  /* .forcategoryslide{
     width: 120px;
     height: 15px;
@@ -42,6 +48,7 @@
   color: #fff;
   border-radius: 50%;
   position: relative;
+  box-shadow: none;
 }
 .forcategoryslide h4{
   font-size: 16px;
@@ -52,7 +59,9 @@
   margin-top: 30px;
   text-align: center;
 }
-
+./*card-title{
+  margin: 0;
+}*/
 </style>
 </head>
 
@@ -64,7 +73,7 @@
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
 
- <a href="imdex.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
+ <a href="index.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
 
 
  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
@@ -115,7 +124,7 @@
 <div id="main">
 <div class="w3" style="background: #bc1821;">
   <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
-<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
+<a href="index.html"><h2 class="text-white mt-lg-2 forlogo">AMC store</h2></a>
 <a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 2%;"></a>
  <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon"></i></a>
 </div>
@@ -760,7 +769,7 @@ function myAccFunc4() {
       grabCursor: true,
       centeredSlides: false,
       slidesPerView: 'auto',
-      spaceBetween: 30,
+      spaceBetween: 20,
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
