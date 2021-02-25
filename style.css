@@ -128,7 +128,7 @@
       .forcard{
          width: 14rem; 
           box-shadow: 0px 3px 6px 0 #A7A7A7, 0 3px 6px 0 #A7A7A7;
-      /*   border: 0.1rem solid #000;*/
+        border: 0.1rem solid #000;
       }
 
 /*.forcard{
