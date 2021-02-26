@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<title>AMC STORE</title>
+</head>
+<body>
+  <nav>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left  mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
+  <button class="mr-auto w3-bar-item w3-button w3-large"
+  onclick="w3_close()" style="position: relative; height: 50px; border-radius: 4px;">
+  <img src="img/left2.png" style="position: absolute; right: 8%; top: 20%;    background: #ddd;  padding: 8px; display: flex; justify-content: space-around; "></button>
+
+  <a href="imdex.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc" class="w3-hide  w3-card w3-border">
+    <a href="#al" class="w3-bar-item w3-button w3-border-bottom">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Imadiattar</a>
+  </div>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="category.html" class="w3-bar-item w3-button w3-border-bottom">Attar</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Perfume</a>
+  </div>
+
+
+  <a href="cart.html" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+  <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc3" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">My order</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">My Address</a>
+  </div>
+
+
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+  <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc4" class="w3-hide w3-white w3-card">
+     <a href="#" class="w3-bar-item w3-button w3-border-bottom">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
+  </div>
+
+
+
+ <a href="#" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
+</div>
+
+<div id="main">
+<div class="w3" style="background: #bc1821;">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
+<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 15px;"></a>
+ <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon"></i></a>
+</div>
+
+</div>
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+</nav>
+
+
+<div class="container">
+    <h4 style="line-height:">WISHLIST</h4>
+  <h6 class="text-muted" style="font-size: 12px; line-height: 0;">Products are waiting for you</h6>
+  <div class="row" style="margin-left: -4px;">
+                 <div  class="col-lg-3 col-md-6 col-sm-6 col-6  d-flex justify-content-center my-2">
+                 <div class="card forcard border border-dark">
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            </button>
+                                    <div class="" id="color">
+<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+  </button>                      
+                        </div>
+          
+                         <div class="fordiscount">5% off</div>
+                          
+                           <div class="card-body">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                           </button>
+                               <h6 class="forcardtitle2" style="margin: 0px 0;">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+
+                                         <div  class="col-lg-3 col-md-6 col-sm-6 col-6  d-flex justify-content-center my-2">
+                 <div class="card forcard border border-dark">
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            </button>
+                                    <div class="" id="color">
+<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+  </button>                      
+                        </div>
+          
+                         <div class="fordiscount">5% off</div>
+                          
+                           <div class="card-body">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                           </button>
+                               <h6 class="forcardtitle2" style="margin: 0px 0;">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>               <div  class="col-lg-3 col-md-6 col-sm-6 col-6  d-flex justify-content-center my-2">
+                 <div class="card forcard border border-dark">
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            </button>
+                                    <div class="" id="color">
+<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+  </button>                      
+                        </div>
+          
+                         <div class="fordiscount">5% off</div>
+                          
+                           <div class="card-body">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                           </button>
+                               <h6 class="forcardtitle2" style="margin: 0px 0;">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>          
+
+                               <div  class="col-lg-3 col-md-6 col-sm-6 col-6 d-flex justify-content-center my-2">
+                 <div class="card forcard border border-dark">
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
+             <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+            </button>
+                                    <div class="" id="color">
+<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
+<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+  </button>                      
+                        </div>
+          
+                         <div class="fordiscount">5% off</div>
+                          
+                           <div class="card-body">
+                                        <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none; background: transparent;">
+
+                             <h5 class="card-title">Silk Musk Attar(12ml)</h5>
+                           </button>
+                               <h6 class="forcardtitle2" style="margin: 0px 0;">Brand : Al-Nafees
+                                <br>Light Fragnance</h6>
+                                  <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
+                                    <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
+                                      <button class="btn btn-primary forbtn">Add</button>
+                              </div>
+                            </div>
+                          </div>
+</div>  
+</div>
+ <div class="container-fluid container-fluid2 pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-0 a">
+                         <h3 class="text-muted mb-md-0 mb-5 bold-text">AMC store - Attar & Perfume.</h3>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                         <ul class="list-unstyled">
+                             <li>Home</li>
+                             <li>About</li>
+                             <li>Blog</li>
+                             <li>Portfolio</li>
+                         </ul>
+                     </div>
+<!--                      <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                         <p class="mb-1">605, RATAN ICON BUILDING</p>
+                         <p>SEAWOODS SECTOR</p>
+                     </div> -->
+                 </div>
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> AMC store All Rights Reserved.</small>
+                     </div>
+                   <!--   <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
+                     </div> -->
+                 </div>
+             </div>
+         </div>
+     </footer>
+ </div>
+  <script>
+  function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function fornumber(id) {
+  id.innerHTML = "+ 1 -";
+}
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+
+  }
+}
+function myDropFunc2() {
+  var x = document.getElementById("demoDrop2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc3() {
+  var x = document.getElementById("demoDrop3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myDropFunc4() {
+  var x = document.getElementById("demoDrop4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+
+
+   $('.dec-btn').click(function () {
+          var siblings = $(this).siblings('input');
+          if (parseInt(siblings.val(), 10) >= 1) {
+              siblings.val(parseInt(siblings.val(), 10) - 1);
+          }
+      });
+
+      $('.inc-btn').click(function () {
+          var siblings = $(this).siblings('input');
+          siblings.val(parseInt(siblings.val(), 10) + 1);
+      });
+</script>
+</body>
+</html>
