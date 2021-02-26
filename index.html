@@ -21,6 +21,11 @@
 
 
 <title>AMC STORE</title>
+<style type="text/css">
+.fa-heart{
+  color: red;
+  }
+</style>
 </head>
 
 
@@ -84,7 +89,7 @@
 <div class="w3" style="background: #bc1821;">
   <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
 <h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
-<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 2%;"></a>
+<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 15px;"></a>
  <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon"></i></a>
 </div>
 
@@ -160,6 +165,8 @@ IMADIATTAR
   </div>
 <!-- </ul> -->
 <!-- products -->
+<i class="fa fa-heart" id="heart"></i>
+
 
 
 <!--   <div class="tab-content"> -->
@@ -260,12 +267,11 @@ Brand : AL-NAFEES
             <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
              <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
             </button>
-                                    <div class="" id="color">
-<button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
-                          <i class="fa fa-heart-o"></i>
-  </button>                      
-                        </div>
-          
+        
+<!-- <div class="forquicklook">
+<i class="fa fa-heart" id="heart"></i>
+         </div>  -->
+
                          <div class="fordiscount">5% off</div>
                           
                            <div class="card-body">
@@ -273,8 +279,12 @@ Brand : AL-NAFEES
 
                              <h5 class="card-title">Silk Musk Attar(12ml)</h5>
                            </button>
+
+                           
+
                                <h6 class="forcardtitle2" style="margin: 0px 0;">Brand : Al-Nafees
                                 <br>Light Fragnance</h6>
+                                <i class="fa fa-heart forquicklook" id="heart"></i>
                                   <h6 class="card-text" style="font-weight: 800;">&#8377;599<br>
                                     <small style="text-decoration: line-through; line-height: 0.6">&#8377;700</small></h6>
                                       <button class="btn btn-primary forbtn">Add</button>
@@ -828,9 +838,10 @@ Brand : AL-NAFEES
                  <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter" style="border: none; outline: none;">
                <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
                  </button>
-                      <div class="" id="color">
+                      <div class="">
                  <button type="button" class="btn forquicklook" data-toggle="modal" data-target="#exampleModal" onclick="datachange()">
-                          <i class="fa fa-heart-o"></i></button>                      
+                          <i class="fa fa-heart-o"  id="color"></i>
+                          <i class="fa fa-heart" aria-hidden="true" style="color: red; display: none;" ></i></button>                      
                         </div>
                          <div class="fordiscount">5% off</div>
                            <div class="card-body">
@@ -1033,7 +1044,7 @@ function myAccFunc4() {
 
 
 function datachange(){
-  document.getElementById(color).style.background ="#bc1821";
+  document.getElementById(color).style.display ="none";
 }
 </script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -1066,6 +1077,10 @@ function datachange(){
 
 
 
+$("#heart").click(function() {
+  $(this).toggleClass('fa-heart-o');
+  $(this).toggleClass('fa-heart');
+});
   </script>
 </body>
 </html>
