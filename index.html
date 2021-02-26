@@ -24,10 +24,10 @@
 </head>
 
 
-<body>
+<body class="body">
 <!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
   <nav>
-  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left  mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
   <button class="mr-auto w3-bar-item w3-button w3-large"
   onclick="w3_close()" style="position: relative; height: 50px; border-radius: 4px;">
   <img src="img/left2.png" style="position: absolute; right: 8%; top: 20%;    background: #ddd;  padding: 8px; display: flex; justify-content: space-around; "></button>
@@ -38,17 +38,17 @@
  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
   <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"></i>
   </button>
-  <div id="demoAcc" class="w3-hide w3-white w3-card">
-    <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
-    <a href="#" class="w3-bar-item w3-button">Imadiattar</a>
+  <div id="demoAcc" class="w3-hide  w3-card w3-border">
+    <a href="#al" class="w3-bar-item w3-button w3-border-bottom">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Imadiattar</a>
   </div>
 
  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
   <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc2" class="w3-hide w3-white w3-card">
-    <a href="category.html" class="w3-bar-item w3-button">Attar</a>
-    <a href="#" class="w3-bar-item w3-button">Perfume</a>
+    <a href="category.html" class="w3-bar-item w3-button w3-border-bottom">Attar</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Perfume</a>
   </div>
 
 
@@ -58,8 +58,8 @@
   <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc3" class="w3-hide w3-white w3-card">
-    <a href="#" class="w3-bar-item w3-button">My order</a>
-    <a href="#" class="w3-bar-item w3-button">My Address</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">My order</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">My Address</a>
   </div>
 
 
@@ -71,7 +71,7 @@
   <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc4" class="w3-hide w3-white w3-card">
-     <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+     <a href="#" class="w3-bar-item w3-button w3-border-bottom">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
 
   </div>
 
@@ -89,6 +89,7 @@
 </div>
 
 </div>
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 </nav>
 
 <div  style="background: #efefef; border-bottom: 1px solid #808080;">
@@ -130,7 +131,7 @@
     <div class="swiper-wrapper">
 
        
-      <div class="swiper-slide forbrandslide"  style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h5 class="forbrandname">
+      <div class="swiper-slide forbrandslide"  style="background-image:url(img/logo1.jpg); border-radius: 50%;" ><h5 class="forbrandname" style="color: #bc1821;">
  AL&nbsp;NAFEES
        <!--  <li class="active"><a data-toggle="pill" href="#nafees">AL-NAFEES</a></li> -->
       </h5></div>
@@ -972,10 +973,13 @@ Brand : AL-NAFEES
    <script>
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+
 }
 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
 }
 function fornumber(id) {
   id.innerHTML = "+ 1 -";
