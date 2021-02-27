@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<title>AMC STORE</title>
+<style>
+  #cartbox{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #808080;
+  }
+  @media (max-width: 680px){
+.forlogo {
+    left: 14%;
+    top: -10px;
+}
+}
+  @media(max-width: 688px){
+    .cartimg{
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    }
+  }
+  .quantity {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+/*  align-items: center;*/
+  font-family: inherit;
+/*border: 1px solid #dedede;
+*/}
+
+.quantity input {
+  width: 3rem;
+  text-align: center;
+/*box-shadow: 0px 1px 0px #dedede, 0px -1px 0px #dedede;*/
+}
+
+.quantity button {
+  background: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  outline: none;
+  background: #ddd;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+<!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
+  <nav>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left mb-5" style="display:none; z-index: 999;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+
+  <a href="imdex.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc" class="w3-hide w3-white w3-card">
+    <a href="#al" class="w3-bar-item w3-button">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button">Imadiattar</a>
+  </div>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="category.html" class="w3-bar-item w3-button">Attar</a>
+    <a href="#" class="w3-bar-item w3-button">Perfume</a>
+  </div>
+
+
+  <a href="cart.html" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+  <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc3" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button">My order</a>
+    <a href="#" class="w3-bar-item w3-button">My Address</a>
+  </div>
+
+
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+  <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc4" class="w3-hide w3-white w3-card">
+     <a href="#" class="w3-bar-item w3-button">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
+  </div>
+
+
+
+ <a href="#" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
+</div>
+
+<div id="main">
+<div class="w3" style="background: #bc1821;">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+<a href="index.html"><h2 class="text-white mt-lg-2 forlogo">AMC store</h2></a>
+<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 15px;"></a>
+<i class="fa fa-heart-o forlogoicon"></i>
+</div>
+
+</div>
+</nav>
+
+
+
+<div class="container">
+<h4 class="mt-3">Your Orders</h4>
+<div class="d-flex justify-content-center px-lg-5 px-1">
+
+          <div class="search" style="margin-bottom: 8px;"> 
+            <input type="text" class="search-input" placeholder="Search in your orders" name=""> 
+                <a href="#" class="search-icon"> <i class="fa fa-search"></i>
+                 </a> 
+               </div>
+
+</div>     
+    <div class="row">
+      <div class="col-12">
+   <div class="table-responsive" style="border: none;">
+     <table class="table">
+       <tbody>
+         <tr>
+           <td style="display: flex; justify-content: space-around; position: relative;">
+<div class="fordiscount" style="left: 19px; top: 24px;">20/2/21</div>
+
+             <img src="img/p6.jpg" class="cartimg">
+           </td>
+           <td>
+             <h4 style="font-size: 14px; line-height: 1.4;">Silk Musk Attar(12ml)</h4>
+            <h6 class="text-muted" style="font-size: 12px; line-height: 0.5;">Brand : AL NAFEES </h6>
+           
+             <h5 style="font-size: 16px; line-height: 0.8;">Price : <span style="color: #bc1821;">  &#8377; 650 </span></h5>
+
+            <h6 class="text-muted" style="font-size: 12px; line-height: 0.6;">Category : Attar </h6>
+            <h6 class="text-dark" style="font-size: 15px; line-height: 0.8;">Status :<span style="color: red"> Pending</span> </h6>
+             <div style="line-height: 0.6;">
+               <button class="btn" style="background: #ddd; color: #00a2b9;"><i class="fa fa-share-alt"></i><span style="font-size: 12px;"> Share</span></button>
+                              <button class="btn" style="background: #00ade9; color: #fff; padding: 6px 9px;"><span style="font-size: 14px;">Buy Again</span></button>
+                                 </div>
+
+           </td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+  </div>
+ </div>
+
+<div style="border-bottom: 1px solid #ddd;"></div>
+ <div class="row">
+      <div class="col-12">
+   <div class="table-responsive" style="border: none;">
+     <table class="table">
+       <tbody>
+         <tr>
+           <td style="display: flex; justify-content: space-around; position: relative;">
+<div class="fordiscount" style="left: 19px; top: 24px;">20/2/21</div>
+
+             <img src="img/p6.jpg" class="cartimg">
+
+           </td>
+           <td>
+             <h4 style="font-size: 14px; line-height: 1.4;">Silk Musk(12ml)</h4>
+            <h6 class="text-muted" style="font-size: 12px; line-height: 0.6;">Brand : AL NAFEES </h6>
+            <h6 class="text-muted" style="font-size: 12px; line-height: 0.6;">Category : Attar </h6>
+            <h6 class="text-dark" style="font-size: 15px; line-height: 0.8;">Status :<span style="color: green"> Completed</span> </h6>
+           
+             <h5 style="font-size: 16px; line-height: 0.8;">Price : <span style="color: #bc1821;">  &#8377; 650 </span></h5>
+
+             <div style="line-height: 0.6;">
+               <button class="btn" style="background: #ddd; color: #00a2b9;"><i class="fa fa-share-alt"></i> <span style="font-size: 12px;">Share</button>
+                               <button class="btn" style="background: #00ade9; color: #fff; padding: 6px 9px;"><span style="font-size: 14px;">Buy Again</button>
+
+             </div>
+           </td>
+         </tr>
+       </tbody>
+
+     </table>
+   </div>
+  </div>
+ </div>
+
+<div style="border-bottom: 1px solid #ddd;"></div>
+
+
+
+</div>
+
+
+
+ <div class="container-fluid container-fluid2 pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-0 a">
+                         <h3 class="text-muted mb-md-0 mb-5 bold-text">AMC store - Attar & Perfume.</h3>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                         <ul class="list-unstyled">
+                             <li>Home</li>
+                             <li>About</li>
+                             <li>Blog</li>
+                             <li>Portfolio</li>
+                         </ul>
+                     </div>
+<!--                      <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                         <p class="mb-1">605, RATAN ICON BUILDING</p>
+                         <p>SEAWOODS SECTOR</p>
+                     </div> -->
+                 </div>
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> AMC store All Rights Reserved.</small>
+                     </div>
+                   <!--   <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
+                     </div> -->
+                 </div>
+             </div>
+         </div>
+     </footer>
+ </div>
+<script>
+  function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function fornumber(id) {
+  id.innerHTML = "+ 1 -";
+}
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+
+
+   $('.dec-btn').click(function () {
+          var siblings = $(this).siblings('input');
+          if (parseInt(siblings.val(), 10) >= 1) {
+              siblings.val(parseInt(siblings.val(), 10) - 1);
+          }
+      });
+
+      $('.inc-btn').click(function () {
+          var siblings = $(this).siblings('input');
+          siblings.val(parseInt(siblings.val(), 10) + 1);
+      });
+</script>
+</body>
+</html>
