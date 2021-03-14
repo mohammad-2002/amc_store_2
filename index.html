@@ -25,6 +25,7 @@
 .fa-heart{
   color: red;
   }
+
 </style>
 </head>
 
@@ -39,17 +40,17 @@
 
   <a href="index.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
 
-
  <button class="w3-button w3-block w3-left-align"  onclick="myAccFunc()">
-  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"  id="caret2"></i>
+ <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"> </i>
   </button>
+
   <div id="demoAcc" class="w3-hide  w3-card w3-border">
     <a href="#al" class="w3-bar-item w3-button w3-border-bottom">Al-Nafees</a>
     <a href="#" class="w3-bar-item w3-button w3-border-bottom">Imadiattar</a>
   </div>
 
  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
-  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down" id="caret"></i>
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc2" class="w3-hide w3-white w3-card">
     <a href="category.html" class="w3-bar-item w3-button w3-border-bottom">Attar</a>
@@ -64,7 +65,8 @@
   </button>
   <div id="demoAcc3" class="w3-hide w3-white w3-card">
     <a href="order.html" class="w3-bar-item w3-button w3-border-bottom">My order</a>
-  </div>
+<!--     <a href="#" class="w3-bar-item w3-button w3-border-bottom">My Address</a>
+ -->  </div>
 
 
 
@@ -81,15 +83,25 @@
 
 
 
- <a href="login.html.html" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
+ <a href="login.html" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
 </div>
 
 <div id="main">
 <div class="w3" style="background: #bc1821;">
   <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
-<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
-<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 14px;"></a>
- <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon"></i></a>
+<a href="index.html"><h2 class="text-white mt-lg-2 forlogo">AMC store</h2></a>
+
+<a href="cart.html">
+<div>
+ <img src="img/bag.png" style="position: absolute; right: 5%; top: 14px;">
+     <span style="font-size: 8px;  position: absolute; background: #ddd; font-weight: bold; top: 26px; right: 5%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%;">4</span>
+</div>
+
+</a>
+
+ <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon">
+   <span style="font-size: 9px;  font-weight: bold; position: absolute; background: #ddd; top: 12px; right: 0%; width: 13px; height: 13px; text-align: center; padding-top: 2px; padding-left: 1px; border-radius: 40%;">4</span></i>
+ </a>
 </div>
 
 </div>
@@ -189,7 +201,7 @@ Brand : AL-NAFEES
         </h5>
       
 
-        <button type="button"  class="close" data-dismiss="modal" aria-label="Close"  style="font-size: 40px;">
+        <button type="button"  class="close" data-dismiss="modal" aria-label="Close" style="font-size: 40px;">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -229,7 +241,7 @@ Brand : AL-NAFEES
 </div>
 
 
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -246,7 +258,7 @@ Brand : AL-NAFEES
       </div>
     </div>
   </div>
-</div> -->
+</div>
 <!-- <div id="nafees" class="tab-pane fade-in active"> -->
 
 
@@ -270,7 +282,7 @@ Brand : AL-NAFEES
             </button>
         
 <div class="forquicklook">
-<i class="fa fa-heart-o"></i>
+<i class="fa fa-heart-o fa-2x"></i>
          </div> 
 
                          <div class="fordiscount">5% off</div>
@@ -989,7 +1001,9 @@ $(".fa-caret-down").click(function() {
 
 
 });
+
  </script>
+ 
    <script>
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -1052,9 +1066,7 @@ function myAccFunc4() {
 
 
 
-function datachange(){
-  document.getElementById(color).style.display ="none";
-}
+
 </script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -1086,9 +1098,6 @@ function datachange(){
 
 
 
-$('#myModal').modal({
-  keyboard: true
-})
   </script>
 </body>
 </html>
