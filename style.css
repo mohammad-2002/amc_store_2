@@ -9,6 +9,7 @@
       left: 45%;
       top: 0;
       font-family: 'Abel', sans-serif;
+  
     }
     .forlogoicon{
       position: absolute;
@@ -179,11 +180,19 @@
   display: flex;
   justify-content: center;
   margin-top: 4px;
- font-size: 12px;
+ font-size: 14px;
  font-weight: bolder;
  
 }
 .forbtn{
+  background: #00ade9;
+  position: absolute; 
+   right: 5px; 
+  top: 86%;
+  border: none;
+  outline: none;
+}
+.quantitycart{
   background: #00ade9;
   position: absolute; 
    right: 5px; 
@@ -342,4 +351,3 @@ color: #fff;
             top: 81%;
           }
 )
---swiper-theme-color: #bc1821;
