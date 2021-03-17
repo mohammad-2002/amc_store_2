@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<title>AMC STORE</title>
+<style type="text/css">
+.fa-heart{
+  color: red;
+  }
+/*.chevron ::after i{
+  transform: rotate(
+180deg
+) !important;
+}*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+/*  margin-top: 6px;
+  margin-bottom: 16px;*/
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+/*  margin-top: 6px;
+  margin-bottom: 16px;*/
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #02abe9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+
+<body class="body">
+<!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
+  <nav style="box-shadow:0 3px 9px 0  #808080; ">
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left  mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
+  <button class="mr-auto w3-bar-item w3-button w3-large"
+  onclick="w3_close()" style="position: relative; height: 50px; border-radius: 4px;">
+  <img src="img/left2.png" style="position: absolute; right: 8%; top: 20%;    background: #ddd;  padding: 8px; display: flex; justify-content: space-around; "></button>
+
+  <a href="index.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
+<div class="chevron">
+ <button class="w3-button w3-block w3-left-align"  onclick="myAccFunc()">
+  <div id="caret"><img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"> </i></div>
+  </button>
+</div>
+
+  <div id="demoAcc" class="w3-hide  w3-card w3-border">
+    <a href="#al" class="w3-bar-item w3-button w3-border-bottom">Al-Nafees</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Imadiattar</a>
+  </div>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="demoAcc2" class="w3-hide w3-white w3-card">
+    <a href="category.html" class="w3-bar-item w3-button w3-border-bottom">Attar</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-bottom">Perfume</a>
+  </div>
+
+
+  <a href="cart.html" class="w3-bar-item w3-button"><img src="img/bag3.png"> My Cart</a>
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc3()">
+  <i class="fa fa-user"></i> My Account <i class="fa fa-caret-down" id="caret"></i>
+  </button>
+  <div id="demoAcc3" class="w3-hide w3-white w3-card">
+    <a href="order.html" class="w3-bar-item w3-button w3-border-bottom">My order</a>
+    <a href="testimonial.html" class="w3-bar-item w3-button w3-border-bottom">Testimonial</a>
+  </div>
+
+
+
+  <a href="wishlist.html" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
+
+
+ <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
+  <img src="img/reseller.png">Want to be become <br>reseller? <i class="fa fa-caret-down" id="caret"></i>
+  </button>
+  <div id="demoAcc4" class="w3-hide w3-white w3-card">
+     <a href="#" class="w3-bar-item w3-button w3-border-bottom">Message on Whatsapp <i class="fa fa-whatsapp"></i></a>
+
+  </div>
+
+
+
+ <a href="login.html" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
+</div>
+
+<div class="w3" style="background: #bc1821;";>
+<div id="main" style="">
+  <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+<a href="index.html"><h2 class="text-white mt-lg-2 forlogo" style="color: #bc1821">AMC store</h2></a>
+
+<a href="cart.html">
+<div>
+<img src="https://img.icons8.com/plasticine/40/000000/shopping-cart.png"  style="position: absolute; right: 3%; top: 6px;">
+     <span style="font-size: 8px;  position: absolute; background: #ddd; color: #000; font-weight: bold; top: 26px; right: 5%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%;">4</span>
+</div>
+</a>
+
+</a>
+<a href="wishlist.html">
+<img src="https://img.icons8.com/material-two-tone/32/000000/hearts.png" class="forlogoicon">
+     <span style="font-size: 8px;  position: absolute; background: #ddd; color: #000; font-weight: bold; top: 26px; right: 15%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%;">4</span>
+</a>
+<!--  <a href="wishlist.html"><i class="fa fa-shopping-cart fa-2x"  style="position: absolute; right: 5%; top: 14px;">
+   <span style="font-size: 9px;  font-weight: bold; position: absolute; background: #00a2b9; color: #fff; top: 12px; right: 0%; width: 13px; height: 13px; text-align: center; padding-top: 2px; padding-left: 0px; border-radius: 40%;">4</span></i>
+ </a> -->
+ <!-- <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon">
+   <span style="font-size: 9px;  font-weight: bold; position: absolute; background: #ddd; color: #000; top: 12px; right: 0%; width: 13px; height: 13px; text-align: center; padding-top: 2px; padding-left: 0px; border-radius: 40%;">4</span></i>
+ </a>
+-->
+</div>
+
+</div>
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+</nav>
+
+<div  style="background: #efefef; border-bottom: 1px solid #808080;">
+
+</div>
+<div style="">
+<div class="container" style="display: flex; justify-content: center; margin-top: 20px; background: #fefefe; padding-top: 10px; padding-bottom: 10px; width: 90%; border-radius: 15px; border: 1px solid #000; margin-top: 60px; box-shadow: 0 2px 7px 0 #808080;">
+  <div style="margin-right: 15px;">
+  <img src="img/man.png" style="border-radius: 50%; margin-top: 15px;">
+  </div>
+  <div>
+  <h4 style="line-height: 0.5;">Hussain babuchak</h4>
+  <i class="fa fa-star" checked style="color: #bc1821;"></i>
+    <i class="fa fa-star" checked style="color: #bc1821;"></i>
+  <i class="fa fa-star" checked style="color: #bc1821;"></i>
+  <i class="fa fa-star" checked style="color: #bc1821;"></i>
+  <i class="fa fa-star-o" ></i>
+<h6 style="line-height: 0.5">
+  Lorem Ipsum is simply </h6><h6 style="line-height: 0.5;"> text of the printing  <h6 style="line-height: 0.5;">industry. Lorem Ipsum has</h6>
+
+</h6>
+   </div>
+</div>
+<div style="margin-left: 20px; margin-top: 10px;">
+   <button class="btn btn-primary " id="newtestimonial">Add new Testimonial</button>
+</div>
+<div class="container mt-5" id="newtestimonialform" style="display: none;">
+<form action="/action_page.php">
+
+<div>
+    <label for="gender"></label>
+    <input type="radio" id="fname" name="firstname" required="" placeholder=""> Male
+ &nbsp; &nbsp; &nbsp;   <input type="radio" id="fname" name="firstname" required="" placeholder=""> Female
+</div>
+    <label for="name"></label>
+    <input type="number" id="mnumber" name="mnumber" required="" placeholder="Your name">
+    
+           <label for="star">Star Rating</label>
+    <select id="star" name="star">
+      <option value="1star">1</option>
+      <option value="2star">2</option>
+      <option value="3star">3</option>
+       <option value="4star">4</option>
+        <option value="5star">5</option>
+    </select>
+
+
+
+
+
+
+<br>
+<br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</div>
+   <script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+function fornumber(id) {
+  id.innerHTML = "+ 1 -";
+}
+
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+
+
+$(document).ready(function(){
+  $("#newtestimonial").click(function(){
+    $("#newtestimonialform").toggle();
+  });
+});
+</script>
+</body>
+</html>
