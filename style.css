@@ -17,6 +17,12 @@
       top: 10px;
       font-size: 24px;
     }
+    .forwishlistnumber{
+      font-size: 8px;  position: absolute; background: #ddd; color: #000; font-weight: bold; top: 26px; right: 7%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%
+    }
+    .forcartnumber{
+      font-size: 8px;  position: absolute; background: #ddd; color: #000; font-weight: bold; top: 26px; right: 3%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%;
+    }
 
         .search {
     width: 100%;
@@ -290,6 +296,12 @@ color: #fff;
       .forlogoicon{
         right: 14%;
 
+              }
+              .forwishlistnumber{
+       right: 15%; 
+              }
+              .forcartnumber{
+ right: 5%                
               }
       .search{
           height: 40px;
