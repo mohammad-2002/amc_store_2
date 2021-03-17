@@ -155,6 +155,7 @@ input[type=submit] {
 
 </div>
 <div style="">
+  <h3 class="ml-3">Testimonial</h3>
 <div class="container" style="display: flex; justify-content: center; margin-top: 20px; background: #fefefe; padding-top: 10px; padding-bottom: 10px; width: 90%; border-radius: 15px; border: 1px solid #000; margin-top: 60px; box-shadow: 0 2px 7px 0 #808080;">
   <div style="margin-right: 15px;">
   <img src="img/man.png" style="border-radius: 50%; margin-top: 15px;">
@@ -172,33 +173,34 @@ input[type=submit] {
 </h6>
    </div>
 </div>
-<div style="margin-left: 20px; margin-top: 10px;">
+<div style="margin-left: 20px; margin-top: 10px; ">
    <button class="btn btn-primary " id="newtestimonial">Add new Testimonial</button>
 </div>
-<div class="container mt-5" id="newtestimonialform" style="display: none;">
+<hr>
+<div class="container mt-2" id="newtestimonialform" style="display: none; background: #efefef; padding-top: 30px; padding-bottom: 30px;">
+<h5 class="mb-5">New Testimonial</h5>
 <form action="/action_page.php">
 
 <div>
-    <label for="gender"></label>
+    <label for="gender">Gender :</label> &nbsp;
     <input type="radio" id="fname" name="firstname" required="" placeholder=""> Male
  &nbsp; &nbsp; &nbsp;   <input type="radio" id="fname" name="firstname" required="" placeholder=""> Female
 </div>
     <label for="name"></label>
-    <input type="number" id="mnumber" name="mnumber" required="" placeholder="Your name">
-    
+    <input type="text" id="name" name="name" required="" placeholder="Your name">
+    <br>
+     <br>
+         <label for="desc"></label>
+   <textarea rows="4" cols="25" placeholder="Description..."></textarea>
+    <br>
+     <br>
            <label for="star">Star Rating</label>
-    <select id="star" name="star">
-      <option value="1star">1</option>
-      <option value="2star">2</option>
-      <option value="3star">3</option>
-       <option value="4star">4</option>
-        <option value="5star">5</option>
-    </select>
-
-
-
-
-
+           <br>
+<i class=" fa fa-star" aria-hidden="true" id="s1" style="font-size: 20px;"></i>
+<i class=" fa fa-star" aria-hidden="true" id="s2"  style="font-size: 20px;"></i>
+<i class=" fa fa-star" aria-hidden="true" id="s3"  style="font-size: 20px;"></i>
+<i class=" fa fa-star" aria-hidden="true" id="s4"  style="font-size: 20px;"></i>
+<i class=" fa fa-star" aria-hidden="true" id="s5"  style="font-size: 20px;"></i>
 
 <br>
 <br>
@@ -273,7 +275,30 @@ $(document).ready(function(){
   $("#newtestimonial").click(function(){
     $("#newtestimonialform").toggle();
   });
+
+  $("#s1").click(function(){
+    $(".fa-star").css("color","#000");
+   $("#s1").css("color", "#bc1821");
+  });
+    $("#s2").click(function(){
+      $(".fa-star").css("color","#000");
+   $("#s1,#s2").css("color", "#bc1821")
+  });
+      $("#s3").click(function(){
+        $(".fa-star").css("color","#000");
+   $("#s1,#s2,#s3").css("color", "#bc1821")
+  });
+        $("#s4").click(function(){
+          $(".fa-star").css("color","#000");
+   $("#s1,#s2,#s3,#s4").css("color", "#bc1821")
+  });
+          $("#s5").click(function(){
+            $(".fa-star").css("color","#000");
+   $("#s1,#s2,#s3,#s4,#s5").css("color", "#bc1821")
+  });
+
 });
+
 </script>
 </body>
 </html>
