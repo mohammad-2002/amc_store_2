@@ -31,9 +31,9 @@
 
 
 <body class="body">
-  <div style="position: fixed; width: 100%; z-index: 999;">
+  <div style="position: fixed; width: 100%; z-index: 9999; ">
 <!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
-  <nav style="box-shadow:0 3px 9px 0  #808080; ">
+  <nav style="box-shadow:0 3px 9px 0  #808080;">
   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left  mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
   <button class="mr-auto w3-bar-item w3-button w3-large"
   onclick="w3_close()" style="position: relative; height: 50px; border-radius: 4px;">
@@ -67,7 +67,7 @@
   </button>
   <div id="demoAcc3" class="w3-hide w3-white w3-card">
     <a href="order.html" class="w3-bar-item w3-button w3-border-bottom">My order</a>
-    <a href="testimonial.html" class="w3-bar-item w3-button w3-border-bottom">Testimonial</a>
+    <a href="testimonial.html" class="w3-bar-item w3-button w3-border-bottom">My Testimonial</a>
   </div>
 
 
@@ -96,14 +96,16 @@
 <a href="cart.html">
 <div>
 <img src="https://img.icons8.com/plasticine/40/000000/shopping-cart.png"  style="position: absolute; right: 3%; top: 6px;">
-     <span style="font-size: 8px;  position: absolute; background: #ddd; color: #000; font-weight: bold; top: 26px; right: 5%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%;">4</span>
+     <span class="forcartnumber" >4</span>
 </div>
 </a>
 
 </a>
 <a href="wishlist.html">
+  <div>
 <img src="https://img.icons8.com/material-two-tone/32/000000/hearts.png" class="forlogoicon">
-     <span style="font-size: 8px;  position: absolute; background: #ddd; color: #000; font-weight: bold; top: 26px; right: 15%; height: 13px; width: 13px; text-align: center; padding-top: 1px; border-radius: 40%;">4</span>
+     <span class="forwishlistnumber">4</span>
+</div>
 </a>
 <!--  <a href="wishlist.html"><i class="fa fa-shopping-cart fa-2x"  style="position: absolute; right: 5%; top: 14px;">
    <span style="font-size: 9px;  font-weight: bold; position: absolute; background: #00a2b9; color: #fff; top: 12px; right: 0%; width: 13px; height: 13px; text-align: center; padding-top: 2px; padding-left: 0px; border-radius: 40%;">4</span></i>
@@ -169,12 +171,18 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="img/offer.jpg" class="d-block w-100" alt="...">
+                      <button class="btn btn-primary offerbtn">Buy Now</button>
+
     </div>
     <div class="carousel-item">
       <img src="img/offer.jpg" class="d-block w-100" alt="...">
+                      <button class="btn btn-primary offerbtn">Buy Now</button>
+
     </div>
     <div class="carousel-item">
       <img src="img/offer.jpg" class="d-block w-100" alt="...">
+                      <button class="btn btn-primary offerbtn">Buy Now</button>
+
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
