@@ -165,11 +165,11 @@ input[type=submit] {
   </div>
   <div>
   <h4 style="line-height: 0.5;">Hussain babuchak</h4>
-  <i class="fa fa-star" checked style="color: #bc1821;"></i>
-    <i class="fa fa-star" checked style="color: #bc1821;"></i>
-  <i class="fa fa-star" checked style="color: #bc1821;"></i>
-  <i class="fa fa-star" checked style="color: #bc1821;"></i>
-  <i class="fa fa-star-o" ></i>
+  <i class="fa fa-star" checked style="color: #FFDD13;  font-size: 18px;"></i>
+    <i class="fa fa-star" checked style="color: #FFDD13; font-size: 18px;"></i>
+  <i class="fa fa-star" checked style="color: #FFDD13; font-size: 18px;"></i>
+  <i class="fa fa-star" checked style="color: #FFDD13; font-size: 18px;"></i>
+  <i class="fa fa-star-o"  style="font-size: 18px;"></i>
 <h6 style="line-height: 0.5">
   Lorem Ipsum is simply </h6><h6 style="line-height: 0.5;"> text of the printing  <h6 style="line-height: 0.5;">industry. Lorem Ipsum has</h6>
 
@@ -193,20 +193,24 @@ input[type=submit] {
     <input type="text" id="name" name="name" required="" placeholder="Your name">
     <br>
      <br>
-         <label for="desc"></label>
-   <textarea rows="4" cols="25" placeholder="Description..."></textarea>
-    <br>
-     <br>
-           <label for="star">Star Rating</label>
-           <br>
-<i class=" fa fa-star" aria-hidden="true" id="s1" style="font-size: 20px;"></i>
-<i class=" fa fa-star" aria-hidden="true" id="s2"  style="font-size: 20px;"></i>
-<i class=" fa fa-star" aria-hidden="true" id="s3"  style="font-size: 20px;"></i>
-<i class=" fa fa-star" aria-hidden="true" id="s4"  style="font-size: 20px;"></i>
-<i class=" fa fa-star" aria-hidden="true" id="s5"  style="font-size: 20px;"></i>
+<div class="d-flex justify-content-center">
+                <label for="star">Rate Us</label> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+                
+<i class=" fa fa-star" aria-hidden="true" id="s1" style="font-size: 20px;"></i>&nbsp;
+<i class=" fa fa-star" aria-hidden="true" id="s2"  style="font-size: 20px;"></i>&nbsp;
+<i class=" fa fa-star" aria-hidden="true" id="s3"  style="font-size: 20px;"></i>&nbsp;
+<i class=" fa fa-star" aria-hidden="true" id="s4"  style="font-size: 20px;"></i>&nbsp;
+<i class=" fa fa-star" aria-hidden="true" id="s5"  style="font-size: 20px;"></i>&nbsp; &nbsp;
 
 <br>
-<br>
+
+</div>
+         <label for="desc"></label>
+   <textarea rows="4" cols="25" placeholder="Please give us your feedback..."></textarea>
+    <br>
+     <br>
+
     <input type="submit" value="Submit">
   </form>
 </div>
@@ -319,23 +323,23 @@ $(document).ready(function(){
 
   $("#s1").click(function(){
     $(".fa-star").css("color","#000");
-   $("#s1").css("color", "#bc1821");
+   $("#s1").css("color", "#FFDD13");
   });
     $("#s2").click(function(){
       $(".fa-star").css("color","#000");
-   $("#s1,#s2").css("color", "#bc1821")
+   $("#s1,#s2").css("color", "#FFDD13")
   });
       $("#s3").click(function(){
         $(".fa-star").css("color","#000");
-   $("#s1,#s2,#s3").css("color", "#bc1821")
+   $("#s1,#s2,#s3").css("color", "#FFDD13")
   });
         $("#s4").click(function(){
           $(".fa-star").css("color","#000");
-   $("#s1,#s2,#s3,#s4").css("color", "#bc1821")
+   $("#s1,#s2,#s3,#s4").css("color", "#FFDD13")
   });
           $("#s5").click(function(){
             $(".fa-star").css("color","#000");
-   $("#s1,#s2,#s3,#s4,#s5").css("color", "#bc1821")
+   $("#s1,#s2,#s3,#s4,#s5").css("color", "#FFDD13")
   });
 
 });
