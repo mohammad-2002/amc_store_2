@@ -15,11 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 <link rel="stylesheet" type="text/css" href="style.css">
-
-
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <title>AMC STORE</title>
 <style type="text/css">
 .fa-heart{
@@ -66,6 +65,8 @@ input[type=submit] {
 
 <body class="body">
 <!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
+    <div style="position: fixed; width: 100%; z-index: 9999; ">
+
   <nav style="box-shadow:0 3px 9px 0  #808080; ">
   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left  mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
   <button class="mr-auto w3-bar-item w3-button w3-large"
@@ -150,7 +151,7 @@ input[type=submit] {
 </div>
 <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 </nav>
-
+</div>
 <div  style="background: #efefef; border-bottom: 1px solid #808080;">
 
 </div>
@@ -158,22 +159,26 @@ input[type=submit] {
   <div class="container">
  <h3>Testimonial</h3>
 </div>
-<div class="container" style="display: flex; justify-content: center; margin-top: 20px; background: #fefefe; padding-top: 10px; padding-bottom: 10px; width: 90%; border-radius: 15px; border: 1px solid #000; margin-top: 60px; box-shadow: 0 2px 7px 0 #808080;">
+<div class="container  border border-dark" style="display: flex; justify-content: center; margin-top: 20px; background: #fefefe; padding-top: 10px; padding-bottom: 10px; width: 90%; border-radius: 15px;  margin-top: 60px; box-shadow: 0 2px 7px 0 #808080;">
   
   <div style="margin-right: 15px;">
-  <img src="img/man.png" style="border-radius: 50%; margin-top: 15px;">
+  <img src="img/man.png" style="border-radius: 50%; margin-top: 10px;">
   </div>
-  <div>
-  <h4 style="line-height: 0.5;">Hussain babuchak</h4>
-  <i class="fa fa-star" checked style="color: #FFDD13;  font-size: 18px;"></i>
-    <i class="fa fa-star" checked style="color: #FFDD13; font-size: 18px;"></i>
-  <i class="fa fa-star" checked style="color: #FFDD13; font-size: 18px;"></i>
-  <i class="fa fa-star" checked style="color: #FFDD13; font-size: 18px;"></i>
-  <i class="fa fa-star-o"  style="font-size: 18px;"></i>
-<h6 style="line-height: 0.5">
+  <div style="margin-top: 5px;">
+  <h4 style="line-height: 1; font-family: 'Bebas Neue', cursive; letter-spacing: 2px;">Hussain babuchak</h4>
+  <span class="iconify" data-icon="bx-bxs-star" data-inline="false" style="font-size: 18px; color: #FFDD13;"></span>
+  <span class="iconify" data-icon="bx-bxs-star" data-inline="false" style="font-size: 18px; color: #FFDD13;"></span>
+  <span class="iconify" data-icon="bx-bxs-star" data-inline="false" style="font-size: 18px; color: #FFDD13;"></span>
+  <span class="iconify" data-icon="bx-bxs-star" data-inline="false" style="font-size: 18px; color: #FFDD13;"></span>
+  <span class="iconify" data-icon="bx-bx-star" data-inline="false" style="font-size: 18px;"></span>
+
+<!-- <h6 style="line-height: 0.5;  font-family: 'Abel', sans-serif; font-weight: 500; letter-spacing: 2px;">
   Lorem Ipsum is simply </h6><h6 style="line-height: 0.5;"> text of the printing  <h6 style="line-height: 0.5;">industry. Lorem Ipsum has</h6>
 
-</h6>
+</h6> -->
+<div style=""><h6 style=" font-family: 'Abel', sans-serif; font-weight: 500; letter-spacing: 2px;">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+</h6></div>
    </div>
 </div>
 <div class="container mt-3" >
@@ -324,6 +329,7 @@ $(document).ready(function(){
   $("#s1").click(function(){
     $(".fa-star").css("color","#000");
    $("#s1").css("color", "#FFDD13");
+   // $("#s1").toggle();
   });
     $("#s2").click(function(){
       $(".fa-star").css("color","#000");
