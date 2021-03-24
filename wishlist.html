@@ -263,36 +263,23 @@
          </div>
      </footer>
  </div>
-  <script>
-  function w3_open() {
+   <script>
+function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
 
 }
 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-
+  document.getElementById("myOverlay").style.display = "none";
 }
 function fornumber(id) {
   id.innerHTML = "+ 1 -";
 }
-function myDropFunc() {
-  var x = document.getElementById("demoDrop");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-red";
 
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
-
-  }
-}
-function myDropFunc2() {
-  var x = document.getElementById("demoDrop2");
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -302,8 +289,8 @@ function myDropFunc2() {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
-function myDropFunc3() {
-  var x = document.getElementById("demoDrop3");
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -313,8 +300,19 @@ function myDropFunc3() {
     x.previousElementSibling.className.replace(" w3-red", "");
   }
 }
-function myDropFunc4() {
-  var x = document.getElementById("demoDrop4");
+function myAccFunc3() {
+  var x = document.getElementById("demoAcc3");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+function myAccFunc4() {
+  var x = document.getElementById("demoAcc4");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     x.previousElementSibling.className += " w3-red";
@@ -326,18 +324,6 @@ function myDropFunc4() {
 }
 
 
-
-   $('.dec-btn').click(function () {
-          var siblings = $(this).siblings('input');
-          if (parseInt(siblings.val(), 10) >= 1) {
-              siblings.val(parseInt(siblings.val(), 10) - 1);
-          }
-      });
-
-      $('.inc-btn').click(function () {
-          var siblings = $(this).siblings('input');
-          siblings.val(parseInt(siblings.val(), 10) + 1);
-      });
 
 
 </script>
