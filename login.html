@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login Template</title>
+  <title>AMC store</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -23,25 +23,28 @@
 <body>
 
 
-  <nav>
+  <div style="position: fixed; width: 100%; z-index: 9999; ">
+<!--   <h3 class="text-center">بسم الله الرحمن الرحيم</h3> -->
+  <nav style="">
   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left  mb-5" style="display:none; z-index: 999; font-weight: 600;" id="mySidebar">
   <button class="mr-auto w3-bar-item w3-button w3-large"
   onclick="w3_close()" style="position: relative; height: 50px; border-radius: 4px;">
   <img src="img/left2.png" style="position: absolute; right: 8%; top: 20%;    background: #ddd;  padding: 8px; display: flex; justify-content: space-around; "></button>
 
   <a href="index.html" class="w3-bar-item w3-button"><img src="img/home.png" class="pb-1"> Home</a>
-
-
- <button class="w3-button w3-block w3-left-align caret"  onclick="myAccFunc()">
-  <img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down" ></i>
+<div>
+ <button class="w3-button w3-block w3-left-align"  onclick="myAccFunc()">
+  <div id="caret"><img src="img/brand.png"> Shop by brand <i class="fa fa-caret-down"> </i></div>
   </button>
+</div>
+
   <div id="demoAcc" class="w3-hide  w3-card w3-border">
     <a href="#al" class="w3-bar-item w3-button w3-border-bottom">Al-Nafees</a>
     <a href="#" class="w3-bar-item w3-button w3-border-bottom">Imadiattar</a>
   </div>
 
  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc2()">
-  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down" id="caret"></i>
+  <img src="img/cat2.png"> Shop by Category <i class="fa fa-caret-down"></i>
   </button>
   <div id="demoAcc2" class="w3-hide w3-white w3-card">
     <a href="category.html" class="w3-bar-item w3-button w3-border-bottom">Attar</a>
@@ -56,12 +59,12 @@
   </button>
   <div id="demoAcc3" class="w3-hide w3-white w3-card">
     <a href="order.html" class="w3-bar-item w3-button w3-border-bottom">My order</a>
-<!--     <a href="#" class="w3-bar-item w3-button w3-border-bottom">My Address</a>
- -->  </div>
+    <a href="testimonial.html" class="w3-bar-item w3-button w3-border-bottom">My Testimonial</a>
+  </div>
 
 
 
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
+  <a href="wishlist.html" class="w3-bar-item w3-button"><i class="fa fa-heart-o"></i> My Whislist</a>
 
 
  <button class="w3-button w3-block w3-left-align" onclick="myAccFunc4()">
@@ -77,17 +80,40 @@
  <a href="login.html" class="w3-bar-item w3-button"><img src="img/login.png"> Login / Logout</a>
 </div>
 
-<div id="main">
-<div class="w3" style="background: #bc1821;">
+<div class="w3" style="background: #bc1821;";>
+<div id="main" style="">
   <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
-<h2 class="text-white mt-lg-2 forlogo">AMC store</h2>
-<a href="cart.html"> <img src="img/bag.png" style="position: absolute; right: 5%; top: 14px;"><!-- <div class="cartorder"></div> --></a>
- <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon" style="color: #000;"></i></a>
+<a href="index.html"><h2 class="text-white mt-lg-2 forlogo" style="color: #bc1821; top: 8px;">AMC store</h2></a>
+
+<a href="cart.html">
+<div>
+<img src="https://img.icons8.com/plasticine/40/000000/shopping-cart.png"  style="position: absolute; right: 3%; top: 6px;">
+     <span class="forcartnumber" >4</span>
+</div>
+</a>
+
+</a>
+<a href="wishlist.html">
+  <div>
+<img src="https://img.icons8.com/material-two-tone/32/000000/hearts.png" class="forlogoicon">
+     <span class="forwishlistnumber">4</span>
+</div>
+</a>
+<!--  <a href="wishlist.html"><i class="fa fa-shopping-cart fa-2x"  style="position: absolute; right: 5%; top: 14px;">
+   <span style="font-size: 9px;  font-weight: bold; position: absolute; background: #00a2b9; color: #fff; top: 12px; right: 0%; width: 13px; height: 13px; text-align: center; padding-top: 2px; padding-left: 0px; border-radius: 40%;">4</span></i>
+ </a> -->
+ <!-- <a href="wishlist.html"><i class="fa fa-heart-o forlogoicon">
+   <span style="font-size: 9px;  font-weight: bold; position: absolute; background: #ddd; color: #000; top: 12px; right: 0%; width: 13px; height: 13px; text-align: center; padding-top: 2px; padding-left: 0px; border-radius: 40%;">4</span></i>
+ </a>
+-->
 </div>
 
 </div>
 <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 </nav>
+
+</div>
+<div style="padding-top: 50px;"></div>
   <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
     <div class="container">
       <div class="card login-card">
@@ -98,9 +124,9 @@
           <div class="col-md-7">
             <div class="card-body">
               <div class="brand-wrapper">
-  <h3>AMC store</h3>
+  <h4> <img src="img/logo4.jpg"> Login in</h4>
                 </div>
-              <p class="login-card-description">Sign into your account</p>
+              <p class="login-card-description"></p>
               <form action="#!">
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
